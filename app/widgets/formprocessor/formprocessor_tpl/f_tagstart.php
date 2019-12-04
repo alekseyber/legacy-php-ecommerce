@@ -1,0 +1,1 @@
+<<?= $input['default_v'] ?> <?php if (isset($input['class'])) { ?>class="<?= $input['class'] ?>"<?php } ?>>
