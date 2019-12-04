@@ -1,0 +1,17 @@
+{
+  "autoload": {
+    "psr-4": {
+      "ishop\\": "vendor/ishop/core",
+      "app\\": "app",
+	  "GeoIp2\\": "vendor/geoip2/src",
+	  "MaxMind\\": "vendor/maxmind"
+    }
+  },
+  "require": {
+    "gabordemooij/redbean": "dev-master",
+    "vlucas/valitron": "^1.4",
+    "swiftmailer/swiftmailer": "^5.4",
+    "tecnick.com/tcpdf": "^6.2",
+    "phpoffice/phpspreadsheet": "^1.9"
+  }
+}
