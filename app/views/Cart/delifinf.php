@@ -1,0 +1,1 @@
+<?= app\widgets\cartmini\Cartmini::toString(false, true); ?>
