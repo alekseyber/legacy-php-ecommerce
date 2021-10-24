@@ -1,0 +1,5 @@
+.product-carousel .img-fluid {	
+	filter: contrast(1.1);
+	-webkit-filter: contrast(1.1);
+}
+
