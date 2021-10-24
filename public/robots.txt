@@ -1,0 +1,24 @@
+User-agent: Yandex
+Disallow: /cart/orderdone
+Disallow: /cart/view
+Disallow: /*utm_source=
+Disallow: */index.php
+Disallow: */fbclid=IwAR28dXPMhSe-D6pC6yj6m9SRZYRqrZoS9a1ouKYFwIsXm1xwIapvfkHEjh4
+Clean-param: sortproduct /women/classic
+Clean-param: sortproduct /dlya-malyshey
+Clean-param: sortproduct /men/botinki
+
+User-agent: Googlebot
+Disallow: /cart/orderdone
+Disallow: /cart/view
+Disallow: /*utm_source=
+Disallow: */index.php
+
+User-agent: *
+Disallow: /cart/orderdone
+Disallow: /cart/view
+Disallow: /*utm_source=
+Disallow: */index.php
+
+Host: https://demo-shop.example
+Sitemap: https://demo-shop.example/sitemap.xml
