@@ -36,12 +36,12 @@
 
 ## Карта каталогов: с чего смотреть
 
-- `vendor/ishop/core/Router.php` — маршрутизация с подменой URL на SEO-алиас из базы;
-- `vendor/ishop/core/Cache.php` — кэш: Memcached если есть, файлы если нет, метки для групповой очистки;
-- `vendor/ishop/core/base/Model.php` — декларативный конструктор форм (шапка файла описывает язык полей);
-- `vendor/ishop/core/cdek/` — интеграция СДЭК как отдельное приложение: адреса, расчёт, пункты выдачи, локализация;
-- `app/controllers/CartController.php` и `app/models/Order.php` — путь заказа: корзина, транзакция, письмо;
-- `frontend/src/js/app/` — компонентный фронтенд: базовый класс компонента, слой данных, UI-компоненты.
+- [vendor/ishop/core/Router.php](vendor/ishop/core/Router.php) — маршрутизация с подменой URL на SEO-алиас из базы;
+- [vendor/ishop/core/Cache.php](vendor/ishop/core/Cache.php) — кэш: Memcached если есть, файлы если нет, метки для групповой очистки;
+- [vendor/ishop/core/base/Model.php](vendor/ishop/core/base/Model.php) — декларативный конструктор форм (шапка файла описывает язык полей);
+- [vendor/ishop/core/cdek/](vendor/ishop/core/cdek) — интеграция СДЭК как отдельное приложение: адреса, расчёт, пункты выдачи, локализация;
+- [app/controllers/CartController.php](app/controllers/CartController.php) и [app/models/Order.php](app/models/Order.php) — путь заказа: корзина, транзакция, письмо;
+- [frontend/src/js/app/](frontend/src/js/app) — компонентный фронтенд: базовый класс компонента, слой данных, UI-компоненты. Структура проекта — [frontend/README.md](frontend/README.md).
 
 ## Как поднять
 
@@ -172,4 +172,4 @@ http://localhost:8090/api?key=demo-index-key
 
 ## Лицензия
 
-Код магазина и движка — MIT, см. `LICENSE`. Сторонние библиотеки — под своими лицензиями.
+Код магазина и движка — MIT, см. [LICENSE](LICENSE). Сторонние библиотеки — под своими лицензиями.
