@@ -10,9 +10,14 @@ class Geoip {
 
     use TSingletone;
 
-    protected function __construct() {        
-        
-        $this->reader = new Reader(ROOT . '/vendor/geoip2/maxmind-db/GeoLite2-City.mmdb');
+    protected function __construct() {
+        // Аудит 2026-11: база MaxMind (GeoLite2-City.mmdb) в репозиторий не входит
+        // из-за лицензии, а пакет geoip2 может быть не установлен. Без них
+        // геолокация просто не работает — приложение продолжает работать.
+        $db = ROOT . '/vendor/geoip2/maxmind-db/GeoLite2-City.mmdb';
+        if (class_exists('GeoIp2\\Database\\Reader') && is_file($db)) {
+            $this->reader = new Reader($db);
+        }
     }
 
     public function get($ip = null) {
@@ -20,7 +25,7 @@ class Geoip {
         $result = self::getIp($ip);
         $ip = $result['ip_str'];
 
-        if ($ip) {
+        if ($this->reader && $ip) {
             $record = $this->reader->city($ip);
             if (isset($record->raw['country']['names']['ru'])) {
                 $result['geo_region'] = $record->raw['country']['names']['ru'] . ", ";

@@ -1,0 +1,39 @@
+# Локальный стенд: PHP 7.0 + Apache, MySQL 5.7 с демо-данными, почтовый приёмник.
+# Порт открыт только на loopback — наружу стенд не смотрит.
+#   docker compose -f docker/docker-compose.yml up -d --build
+#   http://127.0.0.1:8090          — витрина
+#   http://127.0.0.1:8090/admin    — админка (admin / demo1234)
+#   http://127.0.0.1:8025          — письма (mailpit)
+services:
+  web:
+    build: .
+    depends_on:
+      - db
+    ports:
+      - "127.0.0.1:8090:80"
+    volumes:
+      - ..:/var/www/html
+      - ./config_db.php:/var/www/html/config/config_db.php:ro
+    environment:
+      TZ: Europe/Moscow
+
+  db:
+    image: mysql:5.7
+    command: --character-set-server=utf8 --collation-server=utf8_general_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: ishop
+      MYSQL_DATABASE: ishop
+      MYSQL_USER: ishop
+      MYSQL_PASSWORD: ishop
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./schema/020-schema-2023.sql:/docker-entrypoint-initdb.d/10-schema.sql:ro
+      - ./seed.sql:/docker-entrypoint-initdb.d/20-seed.sql:ro
+
+  mail:
+    image: axllent/mailpit
+    ports:
+      - "127.0.0.1:8025:8025"
+
+volumes:
+  dbdata:
