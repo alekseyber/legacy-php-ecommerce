@@ -97,19 +97,33 @@ class Order extends AppModel {
             }
             $order_id = \R::store($order);
 
-            $sql_part = '';
-
+            // Аудит 2026-11: значения подставлялись в запрос строкой, поэтому товар
+            // с апострофом в названии («O'Neil») ломал оформление заказа.
+            // Теперь — плейсхолдеры, число строк собирается отдельно.
+            $rows = [];
+            $bind = [];
             foreach ($_SESSION['cart'] as $product) {
-                $sql_part .= "($order_id, {$product['id']}, ";
-                $sql_part .= " '{$product['img_thumb']}', {$product['qty']}, '{$product['title']}', {$product['price']}, '{$product['link']}', {$product['nosizeselect']}),";
+                $rows[] = '(?, ?, ?, ?, ?, ?, ?, ?)';
+                $bind[] = $order_id;
+                $bind[] = (int) $product['id'];
+                $bind[] = $product['img_thumb'];
+                $bind[] = (int) $product['qty'];
+                $bind[] = $product['title'];
+                $bind[] = $product['price'];
+                $bind[] = $product['link'];
+                $bind[] = (int) $product['nosizeselect'];
             }
-            $sql_part = rtrim($sql_part, ',');
-
-            \R::exec("INSERT INTO orderproduct (order_id, registr_id, img_thumb, qty, title, price, link, nosizeselect) VALUES $sql_part");
+            if ($rows) {
+                \R::exec('INSERT INTO orderproduct (order_id, registr_id, img_thumb, qty, title, price, link, nosizeselect) VALUES ' . implode(',', $rows), $bind);
+            }
 
             \R::commit();
         } catch (Exception $e) {
+            // Аудит 2026-11: раньше исключение гасилось, метод всё равно возвращал true,
+            // и клиент получал подтверждение несуществующего заказа, а админ — письмо о нём.
             \R::rollback();
+            error_log('[' . date('Y-m-d H:i:s') . '] заказ не сохранён: ' . $e->getMessage() . "\n=================\n", 3, ROOT . '/tmp/errors.log');
+            return false;
         }
         $_SESSION['order_num'] = $this->attributes['order_num'];
         return true;

@@ -19,6 +19,9 @@
             </a>
         </nav>
         <div class="sec-page sec">
+            <?php if (!empty($_SESSION['error'])): ?>
+                <div class="alert alert-danger" role="alert"><?php echo htmlspecialchars($_SESSION['error']); unset($_SESSION['error']); ?></div>
+            <?php endif; ?>
             <header class='sec-page-header'>
                 <h1 class="sec-title">Оформление заказа</h1>
 				<?php $discont = getDiscontProc(); ?>

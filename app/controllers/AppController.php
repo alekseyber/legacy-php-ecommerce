@@ -112,6 +112,7 @@ class AppController extends Controller {
     }
 
     protected static function requestChekTable($get = [], $metods_id = 1, $uri = '') {
+        $metods_id = (int) $metods_id; // аудит 2026-11: приведение перед подстановкой в SQL
         $getparams = [];
         $cache = Cache::instance();
         $paramsTable = $cache->get('paramstable');

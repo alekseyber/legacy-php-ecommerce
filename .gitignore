@@ -34,3 +34,11 @@ Thumbs.db
 nbproject/
 composer.phar
 *.zip
+
+# Дампы БД и всё, что может содержать данные клиентов — в репозиторий не попадает.
+# Исключение: схемы без данных (только CREATE TABLE).
+*.sql
+*.sql.gz
+*.sql.zip
+!docker/schema/*.sql
+db-init/

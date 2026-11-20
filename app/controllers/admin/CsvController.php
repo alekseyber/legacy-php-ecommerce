@@ -8,14 +8,24 @@ use ishop\libs\CsvImporter;
 class CsvController extends AppController {
 
     public function uploadAction() {
+        // Аудит 2026-11: раньше сюда подставлялось значение из POST без проверки,
+        // а стоявшая рядом property_exists('Csv', $action) проверяла свойство у класса
+        // с именем «Csv» и всегда давала «нет» — то есть не защищала вообще.
+        // Теперь имя таблицы сверяется с фактическим списком таблиц базы.
         $action = $_POST['action'] ?? '';
-        if ($action) {
-            if (property_exists('Csv', $action)) {
-                $_SESSION['error'] = "$action таблицы не существует в модели Csv";
-                redirect();
-            }
+        if (!preg_match('/^[A-Za-z0-9_]+$/', $action)) {
+            $_SESSION['error'] = 'Недопустимое имя таблицы';
+            redirect();
         }
-        $data = \R::getAll("SELECT * FROM $action");
+        $tables = [];
+        foreach (\R::getAll('SHOW TABLES') as $row) {
+            $tables[] = reset($row);
+        }
+        if (!in_array($action, $tables, true)) {
+            $_SESSION['error'] = "$action таблицы не существует в базе";
+            redirect();
+        }
+        $data = \R::getAll("SELECT * FROM `$action`");
         $fields = \R::inspect($action);
         foreach ($fields as $field => $type) {
             $head[] = $field;
