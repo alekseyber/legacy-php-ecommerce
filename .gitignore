@@ -41,6 +41,7 @@ composer.phar
 *.sql.gz
 *.sql.zip
 !docker/schema/*.sql
+!docker/seed.sql
 db-init/
 
 # Сборка фронта: артефакты не храним
