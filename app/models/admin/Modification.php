@@ -153,12 +153,11 @@ class Modification extends AppModel {
 
     public function saveGallery($id) {
         if (!empty($_SESSION['multi'][$id])) {
-            $sql_part = '';
+            // Аудит 2026-11: имя файла подставлялось в SQL строкой; теперь — плейсхолдеры.
+            $id = (int) $id;
             foreach ($_SESSION['multi'][$id] as $v) {
-                $sql_part .= "('$v', $id),";
+                \R::exec('INSERT INTO gallery (img, modification_id) VALUES (?, ?)', [$v, $id]);
             }
-            $sql_part = rtrim($sql_part, ',');
-            \R::exec("INSERT INTO gallery (img, modification_id) VALUES $sql_part");
             unset($_SESSION['multi'][$id]);
         }
     }

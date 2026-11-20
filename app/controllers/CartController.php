@@ -324,23 +324,32 @@
 					
 					$order->hChek();
 					// сохранение заказа
-					$order->saveOrder();
-					$order->mailOrder();
-					$orderDone = true;
-					$message = 'Заказ № ' . $_SESSION['order_num'] . ' принят.';
-					
-					$order_succes = [
+					// Аудит 2026-11: результат сохранения проверяется. Раньше при сбое
+					// транзакции клиент всё равно видел подтверждение, а админ получал письмо.
+					if ($order->saveOrder()) {
+						$order->mailOrder();
+						$orderDone = true;
+						$message = 'Заказ № ' . $_SESSION['order_num'] . ' принят.';
+						
+						$order_succes = [
                     'order_num' => $_SESSION['order_num'],
                     'cart_sum' => $_SESSION['cart.sum'],
                     'cart_currency' => $_SESSION['cart.currency'],
                     'cart_data' => $_SESSION['cart']
-					];
-					$_SESSION['order_succes'] = $order_succes;
-					unset($_SESSION['order_num']);
-					unset($_SESSION['cart']);
-					unset($_SESSION['cart.qty']);
-					unset($_SESSION['cart.sum']);
-					unset($_SESSION['cart.currency']);
+						];
+						$_SESSION['order_succes'] = $order_succes;
+						unset($_SESSION['order_num']);
+						unset($_SESSION['cart']);
+						unset($_SESSION['cart.qty']);
+						unset($_SESSION['cart.sum']);
+						unset($_SESSION['cart.currency']);
+					} else {
+						// корзину не чистим: человек не должен потерять набранное из-за сбоя
+						$orderDone = false;
+						$message = 'Не удалось оформить заказ. Попробуйте ещё раз или позвоните нам — корзина сохранена.';
+						$_SESSION['error'] = $message;
+						$_SESSION['form_data'] = $data;
+					}
 				}
 			}
 			
