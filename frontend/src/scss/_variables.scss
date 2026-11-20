@@ -1,0 +1,89 @@
+$prev-icon-strl-bl: "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M20%2011H7.83l5.59-5.59L12%204l-8%208%208%208%201.41-1.41L7.83%2013H20v-2z%22%2F%3E%3C%2Fsvg%3E";
+$next-icon-bl: "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%3E%3Cpath%20d%3D%22M5.88%204.12L13.76%2012l-7.88%207.88L8%2022l10-10L8%202z%22%2F%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E";
+$prev-icon-bl: "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20width%3D%2224%22%3E%3Cpath%20d%3D%22M11.67%203.87L9.9%202.1%200%2012l9.9%209.9%201.77-1.77L3.54%2012z%22%2F%3E%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E";
+$zoom-in-bl-18: "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22black%22%20width%3D%2218px%22%20height%3D%2218px%22%3E%3Cpath%20d%3D%22M0%200h24v24H0V0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M15.5%2014h-.79l-.28-.27c1.2-1.4%201.82-3.31%201.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.78%203.04-7.27%207.27.34%202.8%202.56%205.12%205.34%205.59%202.03.34%203.94-.28%205.34-1.48l.27.28v.79l4.26%204.25c.41.41%201.07.41%201.48%200l.01-.01c.41-.41.41-1.07%200-1.48L15.5%2014zm-6%200C7.01%2014%205%2011.99%205%209.5S7.01%205%209.5%205%2014%207.01%2014%209.5%2011.99%2014%209.5%2014zm0-7c-.28%200-.5.22-.5.5V9H7.5c-.28%200-.5.22-.5.5s.22.5.5.5H9v1.5c0%20.28.22.5.5.5s.5-.22.5-.5V10h1.5c.28%200%20.5-.22.5-.5s-.22-.5-.5-.5H10V7.5c0-.28-.22-.5-.5-.5z%22%2F%3E%3C%2Fsvg%3E";
+$zoom-in-bl-36: "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22black%22%20width%3D%2236px%22%20height%3D%2236px%22%3E%3Cpath%20d%3D%22M0%200h24v24H0V0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M15.5%2014h-.79l-.28-.27c1.2-1.4%201.82-3.31%201.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.78%203.04-7.27%207.27.34%202.8%202.56%205.12%205.34%205.59%202.03.34%203.94-.28%205.34-1.48l.27.28v.79l4.26%204.25c.41.41%201.07.41%201.48%200l.01-.01c.41-.41.41-1.07%200-1.48L15.5%2014zm-6%200C7.01%2014%205%2011.99%205%209.5S7.01%205%209.5%205%2014%207.01%2014%209.5%2011.99%2014%209.5%2014zm0-7c-.28%200-.5.22-.5.5V9H7.5c-.28%200-.5.22-.5.5s.22.5.5.5H9v1.5c0%20.28.22.5.5.5s.5-.22.5-.5V10h1.5c.28%200%20.5-.22.5-.5s-.22-.5-.5-.5H10V7.5c0-.28-.22-.5-.5-.5z%22%2F%3E%3C%2Fsvg%3E";
+$zoom-in-w-24: "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22white%22%20width%3D%2224px%22%20height%3D%2224px%22%3E%3Cpath%20d%3D%22M0%200h24v24H0V0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M15.5%2014h-.79l-.28-.27c1.2-1.4%201.82-3.31%201.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.78%203.04-7.27%207.27.34%202.8%202.56%205.12%205.34%205.59%202.03.34%203.94-.28%205.34-1.48l.27.28v.79l4.26%204.25c.41.41%201.07.41%201.48%200l.01-.01c.41-.41.41-1.07%200-1.48L15.5%2014zm-6%200C7.01%2014%205%2011.99%205%209.5S7.01%205%209.5%205%2014%207.01%2014%209.5%2011.99%2014%209.5%2014zm0-7c-.28%200-.5.22-.5.5V9H7.5c-.28%200-.5.22-.5.5s.22.5.5.5H9v1.5c0%20.28.22.5.5.5s.5-.22.5-.5V10h1.5c.28%200%20.5-.22.5-.5s-.22-.5-.5-.5H10V7.5c0-.28-.22-.5-.5-.5z%22%2F%3E%3C%2Fsvg%3E";
+$zoom-in-w-18: "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22white%22%20width%3D%2218px%22%20height%3D%2218px%22%3E%3Cpath%20d%3D%22M0%200h24v24H0V0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M15.5%2014h-.79l-.28-.27c1.2-1.4%201.82-3.31%201.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.78%203.04-7.27%207.27.34%202.8%202.56%205.12%205.34%205.59%202.03.34%203.94-.28%205.34-1.48l.27.28v.79l4.26%204.25c.41.41%201.07.41%201.48%200l.01-.01c.41-.41.41-1.07%200-1.48L15.5%2014zm-6%200C7.01%2014%205%2011.99%205%209.5S7.01%205%209.5%205%2014%207.01%2014%209.5%2011.99%2014%209.5%2014zm0-7c-.28%200-.5.22-.5.5V9H7.5c-.28%200-.5.22-.5.5s.22.5.5.5H9v1.5c0%20.28.22.5.5.5s.5-.22.5-.5V10h1.5c.28%200%20.5-.22.5-.5s-.22-.5-.5-.5H10V7.5c0-.28-.22-.5-.5-.5z%22%2F%3E%3C%2Fsvg%3E";
+$zoom-in-w-36: "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22white%22%20width%3D%2236px%22%20height%3D%2236px%22%3E%3Cpath%20d%3D%22M0%200h24v24H0V0z%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M15.5%2014h-.79l-.28-.27c1.2-1.4%201.82-3.31%201.48-5.34-.47-2.78-2.79-5-5.59-5.34-4.23-.52-7.78%203.04-7.27%207.27.34%202.8%202.56%205.12%205.34%205.59%202.03.34%203.94-.28%205.34-1.48l.27.28v.79l4.26%204.25c.41.41%201.07.41%201.48%200l.01-.01c.41-.41.41-1.07%200-1.48L15.5%2014zm-6%200C7.01%2014%205%2011.99%205%209.5S7.01%205%209.5%205%2014%207.01%2014%209.5%2011.99%2014%209.5%2014zm0-7c-.28%200-.5.22-.5.5V9H7.5c-.28%200-.5.22-.5.5s.22.5.5.5H9v1.5c0%20.28.22.5.5.5s.5-.22.5-.5V10h1.5c.28%200%20.5-.22.5-.5s-.22-.5-.5-.5H10V7.5c0-.28-.22-.5-.5-.5z%22%2F%3E%3C%2Fsvg%3E";
+//fff54a желтый фон
+$f_color_contrast: rgba(255, 255, 255, .7);
+$f_color_contrast2: rgba(255, 255, 255, .9);
+$drk_border_color: #111;
+$drk_background_color: #111;
+$drk_color: #fff;
+$focus_box_shadow: 0 0 8px rgba(0, 0, 0, .18),
+0 2px 3px rgba(0, 0, 0, .36);
+
+$product_row_mg_t_b: 1.25rem;
+$product_row_mg_r_l: -7px;
+$product_col_pg_r_l: 7px;
+
+$color-primary: theme-color($key: "primary");
+$color-secondary:theme-color($key: "secondary");
+
+$color-old-price: gray;
+$color-price: $color-primary;
+$font-weight-price: 700;
+$font-size-price: $font-size-base * 1.3;
+
+
+$form-color-input-width: 1.5rem;
+$form-color-input-margin: .55rem 0;
+
+$form-product-color-l-width: 1.5rem;
+$form-mproduct-color-l-width: 2.5rem;
+
+// $theme-colors: map-merge((primary: #ff6047,
+//     success: #111,
+//   ), $theme-colors);
+
+// @debug $theme-colors;
+
+
+// $border-radius: 0;
+// $theme-colors: (primary: #ff6047,
+//     secondary: #111);
+// $color-primary: #ff6047;
+
+
+$color-contrast-primary: #fff;
+$color-contrast-secondary: #fff;
+
+
+// //ec1b10
+// $color-secondary: #111;
+$input-btn-focus-width: .2rem !default;
+// $input-btn-focus-color: rgba($component-active-bg, .25) !default;
+// $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+//$bmd-shadow-focus: 0 0 8px rgba(0,0,0, .18), 0 8px 16px rgba(0,0,0, .36);
+
+$input-btn-focus-color: rgba(0, 0, 0, .25) !default;
+//$input-btn-focus-box-shadow: 0 0 8px rgba(0,0,0, .18), 0 8px 16px rgba(0,0,0, .36);
+//$input-btn-focus-box-shadow: 0 0 8px rgba(0,0,0, .18), 0 2px 3px rgba(0,0,0, .36);
+//$input-btn-focus-box-shadow: none;
+
+$breadcrumb-divider: quote(">");
+// $breadcrumb-divider: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
+
+
+$tags-l-color: #000000;
+$product-l-color: #000000;
+
+// @debug color($key: "white");
+// @debug gray($key: "700");
+$nav-breadcrumb-background-color: #fff;
+$nav-breadcrumb-color: #000;
+$nav-breadcrumb-active-color: #495057;
+$nav-breadcrumb-hover-color: $color-primary;
+
+
+$dilevery-blocs-background-color: #fff;
+
+$dilevery-blocs-wrap-padding: 30px 20px;
+$dilevery-blocs-wrap-margin: 20px 0 30px 0;
+
+
+
+$modal-no_q_product-z-index: 1300;

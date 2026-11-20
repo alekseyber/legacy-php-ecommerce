@@ -1,0 +1,89 @@
+// @import "~bootstrap-material-design/scss/mixins";
+
+@mixin hover {
+    &:hover {
+        @content;
+    }
+}
+
+@mixin hover-focus {
+
+    &:hover,
+    &:focus {
+        @content;
+    }
+}
+
+@mixin hover-focus-active {
+
+    &:hover,
+    &:focus,
+    &:active {
+        @content;
+    }
+}
+
+@mixin plain-hover-focus {
+
+    &,
+    &:hover,
+    &:focus {
+        @content;
+    }
+}
+
+@mixin border-left-radius($radius) {
+    @if $enable-rounded {
+        border-top-left-radius: $radius;
+        border-bottom-left-radius: $radius;
+    }
+}
+
+@mixin border-right-radius($radius) {
+    @if $enable-rounded {
+        border-top-right-radius: $radius;
+        border-bottom-right-radius: $radius;
+    }
+}
+
+// @mixin box-shadow($shadow...) {
+//     @if $enable-shadows {
+//         box-shadow: $shadow;
+//     }
+// }
+
+
+@mixin user-bage-color() {
+
+    @each $color,
+    $value in $theme-colors {
+        &.badge-#{$color} {
+            background-color: $value;
+            color: #fff;
+        }
+    }
+}
+
+@import "~bootstrap-material-design/scss/mixins/utilities";
+@import "~bootstrap-material-design/scss/mixins/breakpoints";
+@import "~bootstrap-material-design/scss/mixins/animations";
+@import "~bootstrap-material-design/scss/mixins/type";
+@import "~bootstrap-material-design/scss/mixins/layout";
+@import "~bootstrap-material-design/scss/mixins/drawer";
+@import "~bootstrap-material-design/scss/mixins/forms";
+//@import "mixins/forms";
+@import "~bootstrap-material-design/scss/mixins/buttons";
+@import "~bootstrap-material-design/scss/mixins/hover";
+@import "~bootstrap-material-design/scss/mixins/navs";
+
+
+// @import "mixins/utilities";
+// @import "mixins/breakpoints";
+// @import "mixins/animations";
+// @import "mixins/type";
+// @import "mixins/layout";
+// @import "mixins/drawer";
+// @import "mixins/forms";
+// @import "mixins/buttons";
+// @import "mixins/hover";
+// @import "mixins/navs";

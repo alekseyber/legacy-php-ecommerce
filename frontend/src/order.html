@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <base href="/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    <title>Категория | Демо-магазин</title>
+  </head>
+
+  <body>
+    <main class="bmd-layout-content">
+      <!-- <div class="fixed-bl d-none"></div> -->
+      <div class="page-content">
+
+
+        <div class="content-wr">
+          <div class="container">
+              <nav class="nav-breadcrumb">
+                  <ol class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                      <li class="breadcrumb-item" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                          <a class="js-link-true2" itemprop="item" href="/">
+                              <span itemprop="name" class="material-icons">home</span>
+                          </a>
+                          <meta itemprop="position" content="1">
+                      </li>
+                      <li class="breadcrumb-item active" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                          <a class="disabled" itemprop="item" href="/cart/view">
+                              <span itemprop="name">Заказ оформлен</span></a>
+                          <meta itemprop="position" content="2">
+                      </li>
+                  </ol>
+                  <a href="javascript:history.back();" class="breadcrumbs-back">
+                      <span class="material-icons mr-1">arrow_back</span>Назад
+                  </a>
+              </nav>
+              <div class="sec-page sec">
+                  <header class="sec-page-header">
+                      <h1 class="sec-title">Оформление заказа</h1>
+                  </header>
+                        <div class="sec-content sec card js-order-form" id="order-main-form">
+                          <div class="card-body">
+                              <form class="needs-validation" method="post" action="/cart/checkout" novalidate="">
+                                  <div class="row">
+                                      <div class="col-md-6">
+                                          <div class="form-group">                                            
+                                            <label for="order-name" class="bmd-label-floating">Имя*</label>
+                                              <input 
+                                              type="text" 
+                                              name="name" 
+                                              class="form-control" 
+                                              value="" 
+                                              required=""
+                                              id="order-name"
+                                              data-selector="textinput"
+                                              >
+                                              <div class="invalid-feedback">
+                                                  Введите, пожалуйста, имя!
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <div class="form-group">                                 
+                                              <label for="order-phone" class="bmd-label-floating">Телефон*</label>
+                                              <input 
+                                              type="tel"
+                                              name="phone"
+                                              id="order-phone"
+                                              class="form-control"
+                                              value=""
+                                              required=""
+                                              inputmode="tel"
+                                              data-selector="textinput"
+                                              pattern="^((\+?7|8)[ \-] ?)?((\(\d{3}\))|(\d{3}))?([ \-])?(\d{3}[\- ]?\d{2}[\- ]?\d{2})$"
+                                              >
+                                              <div class="invalid-feedback">
+                                                  Введите, пожалуйста, телефон!
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-3 d-flex align-items-end">
+                                          <div class="d-flex align-items-center">
+                                              <div class="me-1">Город:</div>
+                                              <div class="js-city-btn-text fw-bold me-2">Москва</div>
+                                              <button type="button" class="btn btn-danger bmd-btn-fab bmd-btn-icon js-link-modal" data-href="#myModalpromo1" data-dann="{&quot;id&quot;:&quot;1&quot;,&quot;name&quot;:&quot;promo&quot;,&quot;modal&quot;:true,&quot;content_url&quot;:&quot;\/delivery&quot;}">
+                                                  <span class="material-icons">create</span>
+                                              </button>
+                                          </div>
+                                      </div>
+                                      <div class="col-md-9">
+                                          <div class="form-group">
+                                            <label for="order-address" class="bmd-label-floating">Адрес</label>
+                                              <input 
+                                              data-selector="textinput"
+                                              id="order-address"
+                                              type="text"
+                                              name="address"
+                                              class="form-control"                                             
+                                              value="" 
+                                              >
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="order-note" class="bmd-label-floating">Комментарии к заказу</label>
+                                      <textarea
+                                      id="order-note"
+                                      name="note" 
+                                      class="form-control"
+                                      data-selector="textareainput"                                     
+                                      rows="5"
+                                      ></textarea>
+                                  </div>
+                                  <div class="form-group igree">
+                                    <div class="checkbox ">
+                                      <label>
+                                        <input type="checkbox" checked="checked" name="i-agree" required=""> 
+                                        <span> Я согласен с условиями </span>
+                                        <span>
+                                          <a href="/polzovatelskoe-soglashenie" target="_blank">публичной оферты и обработкой моих персональных данных в
+                                              порядке, предусмотренном публичной офертой</a>
+                                      </span>
+                                        <div class="invalid-feedback">
+                                          Поставьте, пожалуйста, галочку!
+                                        </div>
+                                      </label>
+                                    </div>                                    
+                                  </div>
+                                  <div class="order-action">
+                                      <button type="submit" class="btn btn-primary btn-raised">Отправить</button>
+                                  </div>
+                              </form>
+                                                  </div>
+                      </div>
+                              <div class="js-cart-wrap">
+                      <div class="prt_cart card">
+          <div class="card-body">
+                                                  <h3 class="card-title font-weight-bold">Корзина</h3>
+                  <div class="table-responsive">
+                      <table class="table item-list">
+                          <thead class="table-heder-cart">
+                              <tr>
+                                  <th>
+                                      <div class="section-header">Продукт</div>
+                                      <div class="section-header">Детали</div>
+                                      <div class="section-header">Цена</div>
+                                      <div class="section-header">Кол-во</div>
+                                      <div class="section-header header-total-price">Сумма</div>
+                                  </th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                                                          <tr class="cart-row-product">
+                                      <td class="product-col">
+                                          <div class="col-image">
+                                              <div class="item-image">
+                                                  <a href="/women/classic/classic-tall-ii-polusapogi?color=grey&amp;sizes=36" title="Classic Tall II Полусапоги GREY разм: 36">
+                                                      <img class="cart-img-item img-fluid" src="/images/product/300/d64f9c7d2011e91cbc21d9172e9bfba0.jpg" alt="Classic Tall II Полусапоги GREY разм: 36" title="Classic Tall II Полусапоги GREY разм: 36">
+                                                  </a>
+                                              </div>
+                                          </div>
+                                          <div class="col-details">
+                                              <div class="item-details">
+                                                  <div class="product-list-item">
+                                                      <div class="name">
+                                                          <a class="js-link-true2" href="/women/classic/classic-tall-ii-polusapogi?color=grey&amp;sizes=36" title="Classic Tall II Полусапоги GREY разм: 36">Classic Tall II Полусапоги GREY разм: 36</a>
+                                                      </div>
+                                                      <div class="gender">
+                                                          <span class="label">Пол:</span>
+                                                          <span class="value">Женские</span>
+                                                      </div>
+                                                                                                          <div class="attribute attribute-colour">
+                                                              <span class="label">Цвет:</span>
+                                                              <span class="value">
+                                                                  GREY / серый                                                        </span>
+                                                          </div>
+                                                                                                                                                          <div class="attribute attribute-size">
+                                                              <span class="label">Размер:</span>
+                                                              <span class="value">
+                                                                  36                                                        </span>
+                                                          </div>
+                                                                                                  </div>
+                                              </div>
+                                              <div class="item-quantity-details">
+                                                  <ul class="product-availability-list">
+                                                      <li class="is-in-stock">
+                                                          <span class="in-stock">В наличии</span>
+                                                      </li>
+                                                  </ul>
+                                              </div>
+                                              <div class="item-price price-product">
+                                                  <span class="label d-lg-none">
+                                                      Цена
+                                                  </span>
+                                                                                                  <span class="old-price">19700</span>
+                                                                                              <span class="price-sales">7800 руб.</span>
+                                              </div>
+                                              <div class="cart_item_quantity item-quantity">
+                                                  <span class="label d-lg-none">Количество</span>
+                                                  <div class="form-row ">
+                                                      <select class="form-control input-select cart-item-qty" data-id="49" name="qty_item">
+                                                                                                                  <option class="select-option" label="1" value="1" selected="">1</option>
+                                                                                                                  <option class="select-option" label="2" value="2">2</option>
+                                                                                                                  <option class="select-option" label="3" value="3">3</option>
+                                                                                                                  <option class="select-option" label="4" value="4">4</option>
+                                                                                                                  <option class="select-option" label="5" value="5">5</option>
+                                                                                                                                                              </select>
+                                                  </div>
+                                              </div>
+                                              <div class="item-total">
+                                                  <span class="label d-lg-none">
+                                                      Сумма
+                                                  </span>
+                                                  <span class="price-total">
+                                                      7800 руб.                                            </span>
+                                              </div>
+                                          </div>
+                                      </td>
+                                  </tr>
+                                  <tr class="cart-row-actions">
+                                      <td>
+                                          <ul class="edit-remove">
+                                              <li>
+                                                  <div class="item-edit-details">
+                                                      <button type="button" data-href="/women/classic/classic-tall-ii-polusapogi?color=grey&amp;sizes=36&amp;editcatritem=49" class="btn btn-raised btn-secondary js-quickview">Редактировать</button>
+                                                  </div>
+                                              </li>
+                                              <li>
+                                                  <div class="item-delete">
+                                                      <a class="cart-small-deleteitem" href="/cart/delete?id=49" title="Удалить Classic Tall II Полусапоги GREY разм: 36" data-id="49" data-qty="1" data-tpl="cart">Удалить из корзины</a>
+                                                  </div>
+                                              </li>
+                                          </ul>
+                                      </td>
+                                  </tr>
+                                   <tr class="cart-row-cupon">
+                                  <td>
+                                      <a class="collapsed" data-bs-toggle="collapse" href="#collapsecupon">У меня есть промокод</a>
+                                      <div id="collapsecupon" class="collapse">
+                                          <form class="needs-validation" method="post" action="/cart/cupon" novalidate="" data-selector="app-cupon-form">
+                                              <div class="d-flex align-items-end mt-2">
+                                                  <div class="form-group">
+                                                    <label for="order-cupon_name" class="bmd-label-floating">Введите промокод</label>  
+                                                  <input type="text" name="cupon_name" class="form-control"  id="order-cupon_name" data-selector="textinput" required="">
+                                                  <div class="invalid-feedback">
+                                                    Промокод не введен!
+                                                </div>
+                                                </div>
+                                                  <div class="ms-2">
+                                                      <button type="submit" class="btn btn-raised btn-secondary">Применить</button>
+                                                  </div>
+                                              </div>
+                                          </form>
+                                      </div>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <table class="table cart-itog table-hover">
+                          <thead class="cart-itog-heder-cart">
+                              <tr>
+                                  <th class="section-header"></th>
+                                  <th class="section-header"></th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                                                      <tr class="cart-row-itog">
+                                  <td class="colcell1">Итого:</td>
+                                  <td class="colcell2">
+                                      7800 руб.                            </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <div class="js-deliv-inf-bl">
+                          <div class="font-weight-bold h5">Доставка</div>
+      <table class="table cart-itog table-hover">
+          <thead class="cart-itog-heder-cart">
+              <tr>
+                  <th class="section-header"></th>
+                  <th class="section-header"></th>
+              </tr>
+          </thead>
+          <tbody>
+                          <tr class="cart-row-divel">
+                      <td class="colcell1">Доставка Москва при покупке от 5000 руб.:</td>
+                      <td class="colcell2">Бесплатно</td>
+                  </tr>
+                  <tr class="cart-row-divel">
+                      <td class="colcell1">Доставка Москва при покупке до 5000 руб.:</td>
+                      <td class="colcell2">300 руб.</td>
+                  </tr>
+                  </tbody>
+      </table>                </div>
+                  </div>
+                  </div>
+      </div>            </div>
+              </div><!-- sec-page sec-->
+          </div><!--  container-->
+      </div>
+
+
+
+
+          <!--  container-->
+        </div>
+        <!--  content-wr-->
+      </div>
+      <!--  page-content-->
+
+      <div class="preloader">
+        <div>
+          <div class="d-flex align-items-center">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-scr-btn">
+        <button
+          type="button"
+          class="btn btn-primary bmd-btn-fab"
+          id="topScrBtn"
+        >
+          <i class="material-icons">arrow_upward</i>
+        </button>
+      </div>
+      <div class="bottom-alerts">
+        <!-- show -->
+        <div
+          class="alert alert-danger alert-dismissible fade"
+          id="js-alert-danger"
+        >
+          <div class="js-allert-message"></div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+          ></button>
+        </div>
+        <div
+          class="alert alert-success alert-dismissible fade"
+          id="js-alert-success"
+        >
+          <div class="js-allert-message"></div>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+          ></button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

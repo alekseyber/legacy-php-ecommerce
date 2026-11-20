@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2020",    
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@AppUtil/*": ["src/js/app/app-util/*"],
+      "@AppFetch/*": ["src/js/app/app-fetch/*"],
+      "@Constans/*": ["src/js/app/constans/*"],
+      "@Components/*": ["src/js/components/*"],
+      "@Dom/*": ["src/js/dom/*"],
+      "@App/*": ["src/js/app/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}

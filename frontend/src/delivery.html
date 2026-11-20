@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <base href="/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    <title>Доставка | Демо-магазин</title>
+  </head>
+
+  <body>
+    <!-- <div class="fixed-bl d-none"></div> -->
+    <main class="bmd-layout-content">
+      <div class="page-content">
+        <!-- селектор страницы контента -->
+        <div class="content-wr">
+          <!-- страница -->
+          <div class="container">
+            <nav class="nav-breadcrumb">
+              <ol
+                class="breadcrumb"
+                itemscope=""
+                itemtype="http://schema.org/BreadcrumbList"
+              >
+                <li
+                  class="breadcrumb-item"
+                  itemprop="itemListElement"
+                  itemscope=""
+                  itemtype="http://schema.org/ListItem"
+                >
+                  <a class="js-link-true2" itemprop="item" href="/">
+                    <span itemprop="name" class="material-icons">home</span>
+                  </a>
+                  <meta itemprop="position" content="1" />
+                </li>
+                <li
+                  class="breadcrumb-item active"
+                  itemprop="itemListElement"
+                  itemscope=""
+                  itemtype="http://schema.org/ListItem"
+                >
+                  <a class="disabled" itemprop="item" href="#">
+                    <span itemprop="name">Новости</span></a
+                  >
+                  <meta itemprop="position" content="2" />
+                </li>
+              </ol>
+              <a href="javascript:history.back();" class="breadcrumbs-back">
+                <span class="material-icons mr-1">arrow_back</span>Назад
+              </a>
+            </nav>
+            <div class="sec-page sec">
+              <header class="sec-page-header">
+                <h1 class="sec-title">Доставка и оплата</h1>
+              </header>
+              <div data-selector="app-delivery">
+                <div class="row heder-dilevery">
+                  <div class="col-md-4 mb-2">
+                    <div class="dilevery-pr">
+                      <div>
+                        <span class="material-icons">local_shipping</span>
+                      </div>
+                      <div>
+                        <div class="bl-tt">Бесплатная доставка</div>
+                        <div class="bl-pp">МСК от 5000</div>
+                        <div class="bl-pp">по России от 10000</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <div class="dilevery-pr">
+                      <div>
+                        <span class="material-icons">wifi_protected_setup</span>
+                      </div>
+                      <div>
+                        <div class="bl-tt">Возврат/обмен</div>
+                        <div class="bl-pp">14 дней</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-2">
+                    <div class="dilevery-pr">
+                      <div>
+                        <span class="material-icons"
+                          >transfer_within_a_station</span
+                        >
+                      </div>
+                      <div>
+                        <div class="bl-tt">Примерка</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-city-wrap">
+                  <div class="city-title">
+                    <div class="h4">1. Укажите название города</div>
+                    <p>
+                      для того, чтобы подробнее узнать, о стоимости и сроках
+                      доставки
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <div
+                        class="dropdown"
+                        data-selector="app-typeahead"
+                        data-bs-source="city"
+                      >
+                        <div class="form-group" data-bs-toggle="dropdown-t">
+                          <label for="city" class="bmd-label-floating"
+                            >Город</label
+                          >
+                          <div class="input-group reset-btn show-reset">
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="city"
+                              data-selector="textinput"
+                              autocomplete="new-password"
+                              value="Москва"
+                            />
+                            <button
+                              class="btn-close"
+                              data-selector="app-typeahead-clear"
+                              type="button"
+                            >
+                              <i class="material-icons">close</i>
+                            </button>
+                          </div>
+                          <span class="bmd-help"></span>
+                        </div>
+                        <ul class="dropdown-menu"></ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                  </div>                  
+                  <div
+                    class="preloader-dilev"
+                    data-selector="app-delivery-loader"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <div class="spinner-border text-info">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="js-inf-divel-wrap inf-divel-wrap"
+                  id="delivery-no-modal-content"
+                  data-selector="app-delivery-inf"
+                >
+                  <div class="input-city-wrap" data-selector="app-in-load-el">
+                    <div class="dilevery-conten">
+                      <ul
+                        class="nav nav-pills nav-fill nav nav-tabs"
+                        role="tablist"
+                      >
+                        <li class="nav-item">
+                          <a
+                            class="nav-link active"
+                            id="dilevery-cur-tab"
+                            data-bs-toggle="tab"
+                            href="#dilevery-cur"
+                            >Доставка курьером</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a
+                            class="nav-link disabled"
+                            id="dilevery-pvz-tab"
+                            data-bs-toggle="tab"
+                            href="#dilevery-pvz"
+                            >Получение в ПВЗ</a
+                          >
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="dileveryTabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="dilevery-cur"
+                        >
+                          <div class="divel-home-cont">
+                            <div class="divel-col">
+                              <div class="divel-col-heder">Срок доставки</div>
+                              <div class="divel-col-cont">
+                                <div class="div-bl">
+                                  <div class="divel-act">Москва</div>
+                                  <div class="divel-act">
+                                    Подтверждение заказа:
+                                  </div>
+                                  <div>до 18 часов</div>
+                                  <div
+                                    class="dat-wrap"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title=""
+                                    data-bs-original-title="Даты указаны без учета праздничных дней"
+                                  >
+                                    01.04.2021
+                                  </div>
+                                </div>
+                                <div class="div-bl">
+                                  <div>после 18 часов</div>
+                                  <div
+                                    class="dat-wrap"
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title=""
+                                    data-bs-original-title="Даты указаны без учета праздничных дней"
+                                  >
+                                    02.04.2021
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="divel-col">
+                              <div class="divel-col-heder">
+                                Доставка осуществляется
+                              </div>
+                              <div class="divel-col-cont">
+                                <div class="div-bl">
+                                  <div class="divel-act">
+                                    Доставка в пределах МКАД:
+                                  </div>
+                                  <div>Будни с 10 до 21</div>
+                                  <div>Выходные с 11 до 19</div>
+                                </div>
+                                <div class="div-bl">
+                                  <div class="divel-act">
+                                    Доставка за пределы МКАД до 50 км:
+                                  </div>
+                                  <div>Будни и выходные с 11 до 20</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="divel-col">
+                              <div class="divel-col-heder">
+                                Стоимость доставки
+                              </div>
+                              <div class="divel-col-cont">
+                                <div class="div-bl">
+                                  <div
+                                    data-bs-toggle="tooltip"
+                                    data-bs-placement="top"
+                                    title=""
+                                    data-bs-original-title="При покупке от 8000. До 8000 или отказе - 300"
+                                  >
+                                    В пределах МКАД - 0
+                                    <span class="rrr">*</span>
+                                  </div>
+                                </div>
+                                <div class="div-bl">
+                                  <div>До 5 км от МКАД - 500 , далее 10/км</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="dilevery-pvz"></div>
+                      </div>
+                      <div class="row divel-fo">
+                        <div
+                          class="col-sm-4"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title=""
+                          data-bs-original-title="Примерка при получении."
+                        >
+                          <span class="divel-fo-i"
+                            ><span class="material-icons"
+                              >transfer_within_a_station</span
+                            ></span
+                          >
+                          <span class="divel-fo-ttt">Примерка</span>
+                        </div>
+                        <div
+                          class="col-sm-4"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title=""
+                          data-bs-original-title="Частичный выкуп: При покупке одной пары - дополнительная пара на примерку - бесплатно. Далее 100 - пара на примерку, не более 4-х."
+                        >
+                          <span class="divel-fo-i"
+                            ><span class="material-icons"
+                              >remove_shopping_cart</span
+                            ></span
+                          >
+                          <span class="divel-fo-ttt"
+                            >Частичный выкуп<span class="rrr">*</span></span
+                          >
+                        </div>
+                        <div
+                          class="col-sm-4"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title=""
+                          data-bs-original-title="Предоплата в Москве не предусмотрена."
+                        >
+                          <span class="divel-fo-i no-active"
+                            ><span class="material-icons">payment</span></span
+                          >
+                          <span class="divel-fo-ttt">Предоплата</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- sec-page sec-->
+          </div>
+          <!--  container-->
+        </div>
+        <!--  content-wr-->
+      </div>
+      <!--  page-content-->
+
+      <div class="preloader">
+        <div>
+          <div class="d-flex align-items-center">
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-scr-btn">
+        <button
+          type="button"
+          class="btn btn-primary bmd-btn-fab"
+          id="topScrBtn"
+        >
+          <i class="material-icons">arrow_upward</i>
+        </button>
+      </div>
+      <div class="bottom-alerts">
+        <!-- show -->
+        <div
+          class="alert alert-danger alert-dismissible fade"
+          id="js-alert-danger"
+          data-dismiss="alert"
+          role="alert"
+        >
+          <div class="js-allert-message"></div>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div
+          class="alert alert-success alert-dismissible fade"
+          id="js-alert-success"
+          data-dismiss="alert"
+          role="alert"
+        >
+          <div class="js-allert-message"></div>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
