@@ -133,9 +133,14 @@ class Order extends AppModel {
         $order_num = $this->attributes['order_num'];
 
         // Create the Transport
-        $transport = (new Swift_SmtpTransport(App::$app->getProperty('smtp_host'), App::$app->getProperty('smtp_port'), App::$app->getProperty('smtp_protocol')))
-                ->setUsername(App::$app->getProperty('smtp_login'))
-                ->setPassword(App::$app->getProperty('smtp_password'))
+        // Аудит 2026-11: локальный SMTP (mailpit) работает без авторизации и шифрования.
+        // Раньше логин подставлялся всегда, и стенд падал на аутентификации.
+        $protocol = App::$app->getProperty('smtp_protocol');
+        $transport = new Swift_SmtpTransport(App::$app->getProperty('smtp_host'), App::$app->getProperty('smtp_port'), $protocol ? $protocol : null);
+        if (App::$app->getProperty('smtp_login')) {
+            $transport->setUsername(App::$app->getProperty('smtp_login'));
+            $transport->setPassword(App::$app->getProperty('smtp_password'));
+        }
         ;
         // Create the Mailer using your created Transport
         $mailer = new Swift_Mailer($transport);
@@ -154,8 +159,10 @@ class Order extends AppModel {
 //                ->setBody($body, 'text/html')
 //        ;
 
+        // Аудит 2026-11: без авторизации логин пуст, и пустой From не проходит проверку адреса.
+        $from = App::$app->getProperty('smtp_login') ? App::$app->getProperty('smtp_login') : App::$app->getProperty('shop_email');
         $message_admin = (new Swift_Message("Сделан заказ №{$order_num}"))
-                ->setFrom([App::$app->getProperty('smtp_login') => App::$app->getProperty('shop_name')])
+                ->setFrom([$from => App::$app->getProperty('shop_name')])
                 ->setTo(App::$app->getProperty('admin_email'))
                 ->setBody($body, 'text/html')
         ;

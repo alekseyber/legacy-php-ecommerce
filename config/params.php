@@ -2,10 +2,10 @@
 
 return [
     'null_city_delivery' => [], // массив id СДЭК городов, в которых доставка = 0, пример ['137' => true,] - Санкт-Петербург
-    'smtp_host' => 'smtp.beget.com',
-    'smtp_port' => '465',
-    'smtp_protocol' => 'ssl',
-    'smtp_login' => 'no-replay@example.com',
+    'smtp_host' => 'mail',
+    'smtp_port' => '1025',
+    'smtp_protocol' => '',
+    'smtp_login' => '',
     'smtp_password' => '',
     'seo_link_on' => true, //ссылки страниц на основе seo_link таблица sef - ОТКЛЮЧАТЬ НЕ РЕКОМЕНДУЕТСЯ
     'prefix_link_on' => true, //добавляет / к относительной ссылке продуктов и категорий
