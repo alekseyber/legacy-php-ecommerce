@@ -7,24 +7,31 @@ use ishop\libs\CsvImporter;
 
 class CsvController extends AppController {
 
+    // Аудит 2026-11: обмен CSV разрешён только для таблиц каталога. Раньше можно
+    // было выгрузить или перезаписать любую таблицу — в том числе orders
+    // (имена, телефоны и адреса клиентов) и user (логины и хеши паролей).
+    protected static $allowedTables = [
+        'product', 'modification', 'modificationregistr', 'registr',
+        'category', 'brand', 'color', 'sizes', 'sizesgroup',
+        'attribute_group', 'attribute_value', 'attribute_product',
+        'page', 'news', 'citypage', 'utm',
+    ];
+
+    private function tableChecked() {
+        $action = $_POST['action'] ?? '';
+        if (!preg_match('/^[A-Za-z0-9_]+$/', $action) || !in_array($action, self::$allowedTables, true)) {
+            $_SESSION['error'] = 'Эта таблица не участвует в обмене CSV';
+            redirect();
+        }
+        return $action;
+    }
+
     public function uploadAction() {
         // Аудит 2026-11: раньше сюда подставлялось значение из POST без проверки,
         // а стоявшая рядом property_exists('Csv', $action) проверяла свойство у класса
         // с именем «Csv» и всегда давала «нет» — то есть не защищала вообще.
         // Теперь имя таблицы сверяется с фактическим списком таблиц базы.
-        $action = $_POST['action'] ?? '';
-        if (!preg_match('/^[A-Za-z0-9_]+$/', $action)) {
-            $_SESSION['error'] = 'Недопустимое имя таблицы';
-            redirect();
-        }
-        $tables = [];
-        foreach (\R::getAll('SHOW TABLES') as $row) {
-            $tables[] = reset($row);
-        }
-        if (!in_array($action, $tables, true)) {
-            $_SESSION['error'] = "$action таблицы не существует в базе";
-            redirect();
-        }
+        $action = $this->tableChecked();
         $data = \R::getAll("SELECT * FROM `$action`");
         $fields = \R::inspect($action);
         foreach ($fields as $field => $type) {
@@ -60,7 +67,7 @@ class CsvController extends AppController {
     }
 
     public function loadAction() {
-        $action = $_POST['action'] ?? '';
+        $action = $this->tableChecked();
         $csv = $_FILES['csv'] ?? [];
         $key_name = $_POST['key_name'] ?? 'id';
         if ($action && $csv) {
