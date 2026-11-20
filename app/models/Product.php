@@ -839,7 +839,9 @@ class Product extends AppModel {
 
             $product['title'] = $product['color_title'] ? $product['title'] . ' ' . mb_strtoupper($product['color_title']) : $product['title'];
             $product['title'] = $product['sizes_title'] ? $product['title'] . ' разм: ' . $product['sizes_title'] : $product['title'];
-            $product['nosizeselect'] = $cardData['nosizeselect'];
+            // Аудит 2026-11: ключ приходит не из всех вызовов (одноклик не передаёт его),
+            // из-за notice ломался редирект после добавления в корзину.
+            $product['nosizeselect'] = isset($cardData['nosizeselect']) ? $cardData['nosizeselect'] : 0;
         }
 
         return $product;
