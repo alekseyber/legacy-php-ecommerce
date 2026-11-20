@@ -20,5 +20,5 @@ Disallow: /cart/view
 Disallow: /*utm_source=
 Disallow: */index.php
 
-Host: https://demo-shop.example
-Sitemap: https://demo-shop.example/sitemap.xml
+Host: https://example.com
+Sitemap: https://example.com/sitemap.xml
