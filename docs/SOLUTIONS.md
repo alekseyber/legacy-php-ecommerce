@@ -173,7 +173,7 @@
 
 Поля в заказе: `dat_deliv`, `time_deliv`, `metro`, `note_admin`; вместе с `delivery` и `delivery_pvz` они позволяют вести заказ и через свою доставку, и через пункт выдачи.
 
-**Где.** `app/controllers/admin/OrderController.php` (фильтр по дате), `app/views/admin/Order/view.php` и `index.php`, справочник интервалов — `config/params.php` (`time_delive`).
+**Где.** `app/controllers/admin/OrderController.php` (фильтр по дате), `app/views/admin/Order/view.php` и `app/views/admin/Order/index.php`, справочник интервалов — `config/params.php` (`time_delive`).
 
 **Наивно было бы.** Отдавать курьерскую доставку внешней службе и платить за каждый заказ — при небольших объёмах дешевле возить самому, но тогда нужен маршрут: дата, интервал, точка. Ровно эти три поля и дают список на день.
 
