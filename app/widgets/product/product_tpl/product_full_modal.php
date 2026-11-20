@@ -98,9 +98,12 @@
                                           </div>  pdp-share-button -->
                                     </div>
                                 </div>  <!-- product_heading -->
+                                <?php // Аудит 2026-11: логотип бренда показывается только если он задан — в демо-данных картинки бренда нет. ?>
+                                <?php if (!empty($product['brand_img'])): ?>
                                 <div class="product_tab-loyalty">
                                     <img class="logouggmain" alt="<?= $product['brand_title']; ?>" src="<?= $product['brand_img']; ?>">
                                 </div> <!-- product_tab-loyalty -->
+                                <?php endif; ?>
                                 <div class="variations variations-product">
                                     <?php if ($product['product_model'] != '3' && $product['product_model'] != '4'): ?>
                                         <div class="variations_color">                                        
