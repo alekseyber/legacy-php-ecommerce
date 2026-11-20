@@ -28,8 +28,7 @@
                     <div class="form-group">
                         <?php $genders = [0 => 'Все', 1 => 'Женские', 2 => 'Мужские', 3 => 'Детские', 4 => 'Унисекс']; ?>                        
                         <select class="form-control order-status-filter" data-oldval="<?= $gender; ?>" data-action="<?= ADMIN; ?>/product?gender=" data-id="">                                                    
-                            <?php
-                            foreach ($genders as $k => $v):
+                            <?php foreach ($genders as $k => $v):
                                 $selected = '';
                                 if ($gender == $k):
                                     $selected = ' selected';
@@ -76,7 +75,7 @@
                         <div class="btn-panel-input-csv-file">
                             <div class="checkbox" style="margin-top:1px;margin-bottom:1px;">
                                 <label>
-                                    <input type="checkbox" name="onlyugg" value="true" checked>Только UGG
+                                    <input type="checkbox" name="onlyugg" value="true" checked>Только Демо-бренд
                                 </label>
                                 <label>
                                     <input type="checkbox" name="price" value="true">Вывести цену
@@ -123,8 +122,7 @@
                                             <td class="order-status-bgr<?= $class; ?>">                                            
                                                 <?php $pr_status = ['1' => 'On', '2' => 'Off']; ?>
                                                 <select class="form-control order-status-select" data-oldval="<?= $product['status']; ?>" data-action="<?= ADMIN; ?>/product/change-status" data-id="<?= $product['id']; ?>">                                                    
-                                                    <?php
-                                                    foreach ($pr_status as $k => $v):
+                                                    <?php foreach ($pr_status as $k => $v):
                                                         $selected = '';
                                                         if ($product['status'] == $k):
                                                             $selected = ' selected';
