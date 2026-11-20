@@ -367,7 +367,7 @@ class Api {
 //        ]);
 //
 //        $img_category_property = App::$app->getProperty('img_category_property');
-//        $img_category_property = 'https://demo-shop.example' . $img_category_property['150']['path'];
+//        $img_category_property = 'https://example.com' . $img_category_property['150']['path'];
 //
 //        $data = $category->getJson();
 //        $newdata = [];
@@ -678,7 +678,7 @@ class Api {
                     // $item['alias'] = $alias;
                     $item['linkColor'] = '';
                     unset($item['modification_id']);
-                    // $item['img_thumb'] = 'https://demo-shop.example' . $imgproperty['300']['path'] . $item['img'];
+                    // $item['img_thumb'] = 'https://example.com' . $imgproperty['300']['path'] . $item['img'];
                     $result = '';
                     $item['price'] = 0;
                     $item['old_price'] = 0;
@@ -686,7 +686,7 @@ class Api {
                         if ($v['superbig'])
                             continue;
 
-                        $result .= 'https://demo-shop.example' . $v['path'] . $item['img'] . ' ' . $k . 'w,';
+                        $result .= 'https://example.com' . $v['path'] . $item['img'] . ' ' . $k . 'w,';
                     }
                     $result = rtrim($result, ',');
                     if ($result) {
@@ -983,7 +983,7 @@ class Api {
                     // $item['alias'] = $alias;
                     $item['linkColor'] = '';
 
-                    // $item['img_thumb'] = 'https://demo-shop.example' . $imgproperty['300']['path'] . $item['img'];
+                    // $item['img_thumb'] = 'https://example.com' . $imgproperty['300']['path'] . $item['img'];
                     $result = '';
                     $item['price'] = 0;
                     $item['old_price'] = 0;
@@ -991,7 +991,7 @@ class Api {
                         if ($v['superbig'])
                             continue;
 
-                        $result .= 'https://demo-shop.example' . $v['path'] . $item['img'] . ' ' . $k . 'w,';
+                        $result .= 'https://example.com' . $v['path'] . $item['img'] . ' ' . $k . 'w,';
                     }
 
                     $sql_part = 'SELECT img, main, sortvalue AS sortvalue_gallery FROM gallery WHERE modification_id = ? ORDER BY main DESC, sortvalue';

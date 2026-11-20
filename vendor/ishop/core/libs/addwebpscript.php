@@ -1,7 +1,7 @@
 <?php
 
 //define("WWW", dirname(__DIR__) . '/public_html/public');
-define("WWW",  dirname(__DIR__). "/demo-shop.example/public_html/public");
+define("WWW",  dirname(__DIR__). "/example.com/public_html/public");
 define("QUALITY", 60);
 
 

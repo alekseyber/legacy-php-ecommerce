@@ -5,7 +5,7 @@ return [
     'smtp_host' => 'smtp.beget.com',
     'smtp_port' => '465',
     'smtp_protocol' => 'ssl',
-    'smtp_login' => 'sales@example.com',
+    'smtp_login' => 'no-replay@example.com',
     'smtp_password' => '',
     'seo_link_on' => true, //ссылки страниц на основе seo_link таблица sef - ОТКЛЮЧАТЬ НЕ РЕКОМЕНДУЕТСЯ
     'prefix_link_on' => true, //добавляет / к относительной ссылке продуктов и категорий
@@ -116,13 +116,13 @@ return [
     ], //значки тригеров в карточке товара
     'filter_content' => '', //не изменять, резевирование ключа, обновляется программно
     //=========Перенесено в BD===========35
-//    'admin_email' => 'sales@example.com', //add
+//    'admin_email' => 'orders@example.com', //add
 //    'shop_name' => 'Демо-магазин', //add
 //    'shop_name_rus' => 'Винтер-Бутс', //add
 //    'shop_tel' => '8 (800) 000-00-00', //add
 //    'shop_tel_link' => '+7 999 000-00-00', //add
 //    'shop_email' => 'sales@example.com', //add
-//    'shop_adress' => '101000, г. Москва, ул. Демонстрационная, д. 1', //add
+//    'shop_adress' => 'г. Москва, ул. Примерная, д. 1', //add
 //    'shop_work' => 'Ежедневно c 9 до 20', //add
 //    'price_null_home_delivery' => 5000, // от скольки по Москве доставка бесплатно //add
 //    'price_null_region_delivery' => 10000, // от скольки по России доставка бесплатно //add
