@@ -255,7 +255,7 @@ module.exports = {
     hot: isDev,
     proxy: {
       "/": {
-        target: "http://demo-shop.example",
+        target: "http://demo-shop.loc",
         changeOrigin: true,
       },
     },
