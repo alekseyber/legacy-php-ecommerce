@@ -1,0 +1,36 @@
+# локальная конфигурация с доступами
+/config/config_db.php
+
+# наполнение магазина: фото товаров/категорий/новостей, загрузки из админки
+/public/images/product/*
+!/public/images/product/.gitkeep
+/public/images/category/*
+!/public/images/category/.gitkeep
+/public/images/news/*
+!/public/images/news/.gitkeep
+/public/images/topslider/*
+!/public/images/topslider/.gitkeep
+/public/upload/*
+!/public/upload/.gitkeep
+
+# генерируемое: кэш, собранные ассеты, выгрузки для маркетплейсов
+/tmp/cache/*
+!/tmp/cache/.gitkeep
+/public/assets/
+/public/assets_0/
+/public/assets_old/
+/public/old_old_assets/
+/public/yxml_*.xml
+
+# зависимости, восстанавливаются composer install
+/vendor/*
+!/vendor/ishop/
+
+# служебный мусор
+*.log
+.DS_Store
+._*
+Thumbs.db
+nbproject/
+composer.phar
+*.zip
