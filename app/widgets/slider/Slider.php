@@ -39,7 +39,7 @@ class Slider {
         $this->cache ?? App::$app->getProperty('cachetime_' . $this->cacheKey);
         $this->cache = $this->cache ? $this->cache : 3600;
 
-        $tableslider = $cache->get('slidertable' . $this->id);
+        $tableslider = $cache->get('slidertable' . $this->id);		
         if (!$tableslider) {
             $tableslider = \R::getRow("SELECT name, js FROM slider WHERE id = ? LIMIT 1", [$this->id]);
             if (!$tableslider)
@@ -49,10 +49,12 @@ class Slider {
         $this->js = $tableslider['js'];
         $this->jscomment = $tableslider['name'];
 
-        $this->sliderHtml = $cache->get($this->cacheKey);
+		$this->sliderHtml = $cache->get($this->cacheKey);
+		
         if (!$this->sliderHtml) {
-            $data = \R::getAssoc("SELECT id, name, img, href, content FROM slidervalue WHERE status = 1 AND slider_id = ? ORDER BY sortvalue", [$this->id]);
-            $this->sliderHtml = $this->getSliderHtml($data);
+            $data = \R::getAll("SELECT id, name, img, href, content FROM slidervalue WHERE status = 1 AND slider_id = ? ORDER BY sortvalue", [$this->id]);
+           
+			$this->sliderHtml = $this->getSliderHtml($data);			
             $cache->set($this->cacheKey, $this->sliderHtml, $this->cache, 'slider');
         }
     }

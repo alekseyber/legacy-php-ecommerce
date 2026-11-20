@@ -461,6 +461,7 @@ class Product extends AppModel {
             $sql_part .= ' JOIN modification ON product.id = modification.product_id';
             $sql_part .= ' JOIN color ON modification.color_id = color.id';
             $sql_part .= " WHERE product.id IN (" . \R::genSlots($product_ids) . ")";
+			$sql_part .= " AND modification.status = 1";
             $sql_part .= $colorSql ? " AND modification.color_id IN ($colorSql)" : '';
             $sql_part .= ' ORDER BY product.id, modification.color_id DESC';
             $sql_part .= $sortSqlPart ? ", $sortSqlPart" : '';
