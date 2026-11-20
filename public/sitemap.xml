@@ -1,211 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://demo-shop.example</loc>
+    <loc>http://demo-shop.loc</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/contacts</loc>
+    <loc>http://demo-shop.loc/contacts</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/sizechart</loc>
+    <loc>http://demo-shop.loc/sizechart</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/news</loc>
+    <loc>http://demo-shop.loc/news</loc>
     <lastmod>2018-09-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/news1</loc>
-    <lastmod>2018-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>http://demo-shop.example/news2</loc>
+    <loc>http://demo-shop.loc/news1</loc>
     <lastmod>2018-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/news3</loc>
+    <loc>http://demo-shop.loc/news2</loc>
     <lastmod>2018-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/news4</loc>
+    <loc>http://demo-shop.loc/news3</loc>
     <lastmod>2018-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/news5</loc>
+    <loc>http://demo-shop.loc/news4</loc>
     <lastmod>2018-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/news6</loc>
+    <loc>http://demo-shop.loc/news5</loc>
     <lastmod>2018-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/men</loc>
+    <loc>http://demo-shop.loc/news6</loc>
+    <lastmod>2018-09-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>http://demo-shop.loc/men</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women</loc>
+    <loc>http://demo-shop.loc/women</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/kids</loc>
+    <loc>http://demo-shop.loc/kids</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/ugg-all</loc>
+    <loc>http://demo-shop.loc/ugg-all</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/classic</loc>
+    <loc>http://demo-shop.loc/women/classic</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/new</loc>
+    <loc>http://demo-shop.loc/women/new</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/mokasiny</loc>
+    <loc>http://demo-shop.loc/women/mokasiny</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/botinki</loc>
+    <loc>http://demo-shop.loc/women/botinki</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/tapki</loc>
+    <loc>http://demo-shop.loc/women/tapki</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/men/classic</loc>
+    <loc>http://demo-shop.loc/men/classic</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/men/new</loc>
+    <loc>http://demo-shop.loc/men/new</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/men/mokasiny</loc>
+    <loc>http://demo-shop.loc/men/mokasiny</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/men/botinki</loc>
+    <loc>http://demo-shop.loc/men/botinki</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/kids/classic</loc>
+    <loc>http://demo-shop.loc/kids/classic</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/kids/new</loc>
+    <loc>http://demo-shop.loc/kids/new</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/ugg-sale</loc>
+    <loc>http://demo-shop.loc/ugg-sale</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/classic/classic-mini-ii-polusapogi</loc>
+    <loc>http://demo-shop.loc/women/classic/classic-mini-ii-polusapogi</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/classic/classic-tall-ii-polusapogi</loc>
+    <loc>http://demo-shop.loc/women/classic/classic-tall-ii-polusapogi</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/classic/classic-short-ii-polusapogi</loc>
+    <loc>http://demo-shop.loc/women/classic/classic-short-ii-polusapogi</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/classic/bailey-bow-ii-polusapogi</loc>
+    <loc>http://demo-shop.loc/women/classic/bailey-bow-ii-polusapogi</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/classic/bailey-button-triplet-ii-polusapogi</loc>
+    <loc>http://demo-shop.loc/women/classic/bailey-button-triplet-ii-polusapogi</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/classic/bailey-button-mini-ii-polusapogi</loc>
+    <loc>http://demo-shop.loc/women/classic/bailey-button-mini-ii-polusapogi</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/classic/bailey-bow-mini-ii-polusapogi</loc>
+    <loc>http://demo-shop.loc/women/classic/bailey-bow-mini-ii-polusapogi</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/ugg-all/rib-knit-slouchy-crew-sock</loc>
+    <loc>http://demo-shop.loc/ugg-all/rib-knit-slouchy-crew-sock</loc>
     <lastmod>2018-09-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://demo-shop.example/women/classic/bailey-button-ii-polusapogi</loc>
+    <loc>http://demo-shop.loc/women/classic/bailey-button-ii-polusapogi</loc>
     <lastmod>0000-00-00</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
