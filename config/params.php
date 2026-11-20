@@ -1,6 +1,4 @@
-<?php
-
-return [
+<?php return [
     'null_city_delivery' => [], // массив id СДЭК городов, в которых доставка = 0, пример ['137' => true,] - Санкт-Петербург
     'smtp_host' => 'mail',
     'smtp_port' => '1025',
@@ -141,7 +139,7 @@ return [
 //    'product_meta_description' => '@product_gender@ угги @product_name@ @product_price_discont_procoi@. @colors@ Интернет-магазин @shop_name@, телефон: @shop_tel@', //add
 //    'product_meta_keywords' => '@brand_title@ @product_name@', //add
 //    'city_meta_title' => 'Купить угги в @city_iname@ не дорого', // шаблон мета для города, если он не заполнен подставится этот //add
-//    'city_meta_description' => 'Доставка обуви и аксессуаров UGG Australia в @city_name@ занимает максимум @deliveryPeriodMax@ - стоимость @deliveryPriceCurrency@', //add
+//    'city_meta_description' => 'Доставка обуви и аксессуаров в @city_name@ занимает максимум @deliveryPeriodMax@ - стоимость @deliveryPriceCurrency@', //add
 //    'city_meta_keywords' => 'угги @city_name@, купить угги в @city_iname@, ugg @city_name@ оригинал', //add
 //    'divel_hour_podtv' => 18, //час подтверждения заказа когда сегодня можно обработать - выводится в разделе достака //add
 //    'ya_map_api_key' => '', // Yandex Map API KEY //add
