@@ -1,0 +1,102 @@
+@import "variables";
+//@import "customvariables";
+@import "mixins";
+
+// @import "~bootstrap-material-design/scss/variables";
+// @import "~bootstrap-material-design/scss/mixins";
+
+//@import '~mdb-ui-kit/src/scss/mdb.free.scss';
+
+// @import "~bootstrap/scss/bootstrap";
+
+@import "bootstrap";
+
+
+@import "~bootstrap-material-design/scss/reboot";
+
+@import "~bootstrap-material-design/scss/layout";
+//@import "~bootstrap-material-design/scss/buttons";
+@import "buttons";
+//@import "~bootstrap-material-design/scss/checkboxes";
+@import "~bootstrap-material-design/scss/navbar";
+@import "~bootstrap-material-design/scss/dropdown";
+@import "~bootstrap-material-design/scss/drawer";
+
+@import "~bootstrap-material-design/scss/custom-forms";
+//@import "~bootstrap-material-design/scss/switches";
+//@import "~bootstrap-material-design/scss/radios";
+@import "~bootstrap-material-design/scss/forms";
+@import "~bootstrap-material-design/scss/input-group";
+@import "~bootstrap-material-design/scss/list-group";
+@import "~bootstrap-material-design/scss/tables";
+@import "~bootstrap-material-design/scss/nav";
+@import "~bootstrap-material-design/scss/navbar";
+@import "~bootstrap-material-design/scss/alerts";
+//@import "~bootstrap-material-design/scss/progress";
+//@import "~bootstrap-material-design/scss/pagination";
+@import "pagination";
+@import "~bootstrap-material-design/scss/type";
+//@import "~bootstrap-material-design/scss/tooltip";
+//@import "~bootstrap-material-design/scss/popover";
+@import "~bootstrap-material-design/scss/cards";
+//@import "~bootstrap-material-design/scss/modal";
+@import "~bootstrap-material-design/scss/themes";
+@import "~bootstrap-material-design/scss/ripples";
+@import "~bootstrap-material-design/scss/extensions";
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@include user-bage-color();
+
+.badge {
+    padding: 0.25em 0.45em;
+}
+
+a.btn {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+// @import "reboot";
+
+// @import "layout";
+// @import "buttons";
+// @import "checkboxes";
+// @import "custom-forms";
+// @import "switches";
+// @import "radios";
+// @import "forms";
+// @import "input-group";
+// @import "list-group";
+// @import "tables";
+// @import "nav";
+// @import "navbar";
+// @import "alerts";
+// @import "progress";
+// @import "pagination";
+// @import "type";
+// @import "tooltip";
+// @import "popover";
+// @import "cards";
+// @import "modal";
+// @import "dropdown";
+// @import "drawer";
+// @import "themes";
+
+// @import "ripples";
+
+// @import "extensions";
+
+

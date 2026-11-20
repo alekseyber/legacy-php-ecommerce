@@ -1,0 +1,3061 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <base href="/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/png" />
+    <title>Категория | Демо-магазин</title>
+  </head>
+
+  <body>
+    <div data-selector="modal-content"></div>
+    <div
+      class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay"
+      id="layout-container"
+    >
+      <header class="bmd-layout-header">
+        <div class="top-bg-nav">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Глазов</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Доставка и оплата</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Блог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Вернуть/обменять</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Размерная сетка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar navbar-light bg-faded main-nav">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="drawer"
+            data-bs-target="#dw-p1"
+          >
+            <span class="sr-only">Toggle drawer</span>
+            <i class="material-icons">menu</i>
+          </button>
+          <a class="navbar-brand top-brand" href="/">
+            <!-- <img class="d-inline-block align-top" src='/images/logo_sm.png' alt='Демо-магазин'> -->
+            <picture>
+              <source srcset="/images/logo_sm.webp" type="image/webp" />
+              <source srcset="/images/logo_sm.png" type="image/png" />
+              <img
+                class="d-inline-block align-top"
+                src="/images/logo_sm.png"
+                alt="Демо-магазин"
+              />
+            </picture>
+          </a>
+          <ul class="navbar-nav catalog-menu-big">
+            <!-- active -->
+            <li class="nav-item">
+              <a class="nav-link" href="/"
+                ><i class="material-icons">home</i></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Каталог</a>
+            </li>
+            <li class="dropdown nav-item">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                id="collapseCatProductTopwomen"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+              >
+                Женские
+              </button>
+              <div
+                class="card catalog-top-item dropdown-menu"
+                aria-labelledby="collapseCatProductTopwomen"
+              >
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    <div class="card-body">
+                      <div class="list-group">
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Все женские</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Новинки</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Классические</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Короткие</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Мокасины</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >С мехом</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Тапочки</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <picture>
+                      <source
+                        srcset="/images/cat_women_v2.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="/images/cat_women_v2.jpg"
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="card-img img-thumbnail"
+                        src="/images/cat_women_v2.jpg"
+                        alt="Женские угги"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- dropdown nav-item -->
+            <li class="dropdown nav-item">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                id="collapseCatProductTopmen"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+              >
+                Мужские
+              </button>
+              <div
+                class="card catalog-top-item dropdown-menu"
+                aria-labelledby="collapseCatProductTopmen"
+              >
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    <div class="card-body">
+                      <div class="list-group">
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Все мужские</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Новинки</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Классические</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <picture>
+                      <source
+                        srcset="/images/cat_men_v2.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="/images/cat_men_v2.jpg"
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="card-img img-thumbnail"
+                        src="/images/cat_men_v2.jpg"
+                        alt="Мужские угги"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- dropdown nav-item -->
+            <li class="dropdown nav-item">
+              <button
+                class="nav-link dropdown-toggle"
+                type="button"
+                id="collapseCatProductTopkids"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+              >
+                Детские
+              </button>
+              <div
+                class="card catalog-top-item dropdown-menu"
+                aria-labelledby="collapseCatProductTopkids"
+              >
+                <div class="row no-gutters">
+                  <div class="col-6">
+                    <div class="card-body">
+                      <div class="list-group">
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Все детские</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Новинки</a
+                        >
+                        <a class="list-group-item js-link-true2" href="#"
+                          >Классические</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <picture>
+                      <source
+                        srcset="/images/cat_kids_v2.webp"
+                        type="image/webp"
+                      />
+                      <source
+                        srcset="/images/cat_kids_v2.jpg"
+                        type="image/jpeg"
+                      />
+                      <img
+                        class="card-img img-thumbnail"
+                        src="/images/cat_kids_v2.jpg"
+                        alt="Детские угги"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- dropdown nav-item -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Новинки</a>
+            </li>
+          </ul>
+          <div class="search-wr">
+            <button
+              class="btn bmd-btn-icon search-btn"
+              data-toggle="collapse"
+              data-bs-target="#collapse-search"
+              aria-controls="collapse-search"
+            >
+              <i class="material-icons">search</i>
+            </button>
+            <div id="collapse-search" class="collapse collapse-search-wr">
+              <input
+                class="form-control"
+                type="text"
+                autocomplete="off"
+                id="search"
+                placeholder="Поиск..."
+              />
+            </div>
+          </div>
+
+          <div class="navbar-text">
+            <div class="phone-wr">
+              <i class="material-icons">phone</i>
+              <a class="phone" href="tel:+79990000000">8 (800) 000-00-00</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="dw-p1" class="bmd-layout-drawer bg-faded">
+        <header>
+          <a class="navbar-brand" href="/">
+            <span class="material-icons">home</span>
+            <span class="ml-1">demo-shop.example</span>
+          </a>
+        </header>
+        <div class="list-group">
+          <div class="product-cat-menu sec-l-menu">
+            <div class="list-group-item m-t-menu">
+              <div class="tab-content">
+                <div class="tab-pane active" id="v-tab-Cathome">
+                  <div class="nav nav-tabs">
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav js-l-return-tab"
+                      data-bs-target="v-tab-CatWomen"
+                    >
+                      <span>Женские</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav js-l-return-tab"
+                      data-bs-target="v-tab-CatMen"
+                    >
+                      <span>Мужские</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav js-l-return-tab"
+                      data-bs-target="v-tab-CatKids"
+                    >
+                      <span>Детские</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane" id="v-tab-CatWomen">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav js-l-return-tab"
+                    data-bs-target="v-tab-Cathome"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Женские</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <!-- <div class="gr-title">Женские</div> -->
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Все женские</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Новинки</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Классические</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Короткие</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Мокасины</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >С мехом</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Тапочки</a
+                    >
+                  </div>
+                </div>
+                <div class="tab-pane" id="v-tab-CatMen">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav js-l-return-tab"
+                    data-bs-target="v-tab-Cathome"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Мужские</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Все Мужские</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Новинки</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Классические</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Короткие</a
+                    >
+                  </div>
+                </div>
+                <div class="tab-pane" id="v-tab-CatKids">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav js-l-return-tab"
+                    data-bs-target="v-tab-Cathome"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Детские</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Все Детские</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Новинки</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Классические</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Короткие</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item m-t-menu">
+              <a class="btn btn-menu-nav js-link-true2 drawer-cl" href="#">
+                <span>Распродажа</span>
+              </a>
+            </div>
+          </div>
+          <!-- product-cat-menu -->
+          <div class="filter-menu sec-l-menu">
+            <div class="list-group-item m-t-menu">
+              <a
+                class="btn btn-menu-nav btn-drk js-link-true2 drawer-cl"
+                href="#"
+              >
+                <span>Очистить фильтр</span>
+              </a>
+            </div>
+            <div class="list-group-item m-t-menu">
+              <a
+                class="btn btn-menu-nav btn-drk js-link-true2 drawer-cl"
+                href="#"
+              >
+                <span>Разбить цвета</span>
+              </a>
+            </div>
+            <div class="list-group-item m-t-menu">
+              <div class="tab-content">
+                <div class="tab-pane active" id="v-tab-Filterhome">
+                  <div class="nav nav-tabs">
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav js-l-return-tab"
+                      data-bs-target="v-tab-Filterheight"
+                    >
+                      <span>Высота</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav js-l-return-tab"
+                      data-bs-target="v-tab-Filterfloor"
+                    >
+                      <span>Пол</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav js-l-return-tab"
+                      data-bs-target="v-tab-Filterstyle"
+                    >
+                      <span>Фасон</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav js-l-return-tab"
+                      data-bs-target="v-tab-Filtermaterial"
+                    >
+                      <span>Материал</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav js-l-return-tab"
+                      data-bs-target="v-tab-Filtercolor"
+                    >
+                      <span>Цвет</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav js-l-return-tab"
+                      data-bs-target="v-tab-Filtersizes"
+                    >
+                      <span>Размер</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane" id="v-tab-Filterheight">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav js-l-return-tab"
+                    data-bs-target="v-tab-Filterhome"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Высота</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <div class="checkbox-wr list-group-item">
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Мини
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Средние
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Высокие
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab-pane -->
+                <div class="tab-pane" id="v-tab-Filterfloor">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav js-l-return-tab"
+                    data-bs-target="v-tab-Filterhome"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Пол</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <div class="checkbox-wr list-group-item">
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Женские
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Мужские
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Детские
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab-pane -->
+                <div class="tab-pane" id="v-tab-Filterstyle">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav js-l-return-tab"
+                    data-bs-target="v-tab-Filterhome"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Фасон</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <div class="checkbox-wr list-group-item row">
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Классические
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          С пуговицей
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          С лентами
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          На молнии
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          С мехом
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Ботинки
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Мокасины
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          От Джимми Чу
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          С заклепками
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Со стразами
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Тапочки
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab-pane -->
+                <div class="tab-pane" id="v-tab-Filtermaterial">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav js-l-return-tab"
+                    data-bs-target="v-tab-Filterhome"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Материал</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <div class="checkbox-wr list-group-item row">
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Классические
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          С пуговицей
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          С лентами
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          На молнии
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          С мехом
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Ботинки
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Мокасины
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          От Джимми Чу
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          С заклепками
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Со стразами
+                        </label>
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input
+                            type="checkbox"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          />
+                          Тапочки
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab-pane -->
+                <div class="tab-pane" id="v-tab-Filtercolor">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav js-l-return-tab"
+                    data-bs-target="v-tab-Filterhome"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Цвет</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <div class="checkbox-wr list-group-item">
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#111"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">черный</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#c09853"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">рыжий</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#604c3d"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">коричневый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#9e9e9e"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">серый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#dbcfa7"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">бежевый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#1c4e88"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">синий</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#BCAEB3"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">сиреневый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#1976d2"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">голубой</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#78cbaf"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">бирюзовый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#8B00FF"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">фиолетовый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#d4a190"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">светло-розовый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#beaf90"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">золотистый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#FFA500"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">оранжевый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#f3e4df"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">розовый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#521928"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">бордовый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#d32f2f"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">красный</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#c9c9cb"
+                            checked
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">серебристый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#e5e1d6"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">белый</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#013220"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">темно-зелёный</span>
+                        </label>
+                      </div>
+                      <div class="checkbox color">
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-color="#F754E1"
+                            class="js-checkbox-true"
+                            data-href="#"
+                          /><span class="clr-title">ярко-розовый</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab-pane -->
+                <div class="tab-pane" id="v-tab-Filtersizes">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav js-l-return-tab"
+                    data-bs-target="v-tab-Filterhome"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Размеры</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <div class="btn-wr list-group-item">
+                      <a
+                        class="btn btn-outline btn-size js-link-true active"
+                        data-block=""
+                        href="#"
+                        >25</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >26</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >27</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >28</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >29</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >30</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >31</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >32</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >33</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >34</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >35</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >36</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >37</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >38</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >39</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >40</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >41</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >42</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >43</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >44</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >45</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >46</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >S</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >M</a
+                      >
+                      <a
+                        class="btn btn-outline btn-size js-link-true"
+                        data-block=""
+                        href="#"
+                        >L</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- tab-pane -->
+              </div>
+            </div>
+          </div>
+          <!-- filter-menu -->
+
+          <div class="page-menu sec-l-menu">
+            <div class="list-group-item m-t-menu">
+              <div class="tab-content">
+                <div class="tab-pane active" id="v-tab-pagehome">
+                  <div class="nav nav-tabs">
+                    <button
+                      type="button"
+                      class="btn btn-menu-nav"
+                      data-bs-target="v-tab-pagehome"
+                    >
+                      <span>Информация</span>
+                      <span class="material-icons right">arrow_forward</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="tab-pane" id="v-tab-pagehome">
+                  <button
+                    type="button"
+                    class="btn btn-menu-nav"
+                    data-bs-target="v-tab-pagehome"
+                    data-bs-toggle="tableftmenu"
+                  >
+                    <span class="material-icons left">arrow_back</span>
+                    <span>Информация</span>
+                  </button>
+                  <div class="m-t-con list-group">
+                    <!-- <div class="gr-title">Информация</div> -->
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Доставка и оплата</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Вернуть обменять</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Блог</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Отзывы</a
+                    >
+                    <a class="list-group-item js-link-true2 drawer-cl" href="#"
+                      >Контакты</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item m-t-menu">
+              <a
+                class="btn btn-menu-nav btn-drk js-link-true2 drawer-cl"
+                href="#"
+              >
+                <span>Заказать звонок</span>
+              </a>
+            </div>
+          </div>
+          <!-- page-menu -->
+        </div>
+        <!-- list-group -->
+      </div>
+      <!-- bmd-layout-drawer -->
+      <main class="bmd-layout-content">
+        <div class="fixed-bl d-none"></div>
+        <div class="page-content">
+          <div class="content-wr">
+            <div class="container">
+              <nav class="nav-breadcrumb">
+                <ol
+                  class="breadcrumb"
+                  itemscope=""
+                  itemtype="http://schema.org/BreadcrumbList"
+                >
+                  <li
+                    class="breadcrumb-item"
+                    itemprop="itemListElement"
+                    itemscope=""
+                    itemtype="http://schema.org/ListItem"
+                  >
+                    <a class="js-link-true2" itemprop="item" href="/">
+                      <span itemprop="name" class="material-icons">home</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                  </li>
+                  <li
+                    class="breadcrumb-item"
+                    itemprop="itemListElement"
+                    itemscope=""
+                    itemtype="http://schema.org/ListItem"
+                  >
+                    <a class="js-link-true2" itemprop="item" href="#">
+                      <span itemprop="name">Все товары</span></a
+                    >
+                    <meta itemprop="position" content="2" />
+                  </li>
+                  <li
+                    class="breadcrumb-item active"
+                    itemprop="itemListElement"
+                    itemscope=""
+                    itemtype="http://schema.org/ListItem"
+                  >
+                    <a class="disabled" itemprop="item" href="#">
+                      <span itemprop="name"
+                        >Женские Classic Tall II Полусапоги</span
+                      ></a
+                    >
+                    <meta itemprop="position" content="3" />
+                  </li>
+                </ol>
+                <a href="javascript:history.back();" class="breadcrumbs-back">
+                  <span class="material-icons mr-1">arrow_back</span>Назад
+                </a>
+              </nav>
+
+              <div itemscope="" itemtype="http://schema.org/Product">
+                <div class="sec-product sec" data-selector="main-product">
+                  <div class="product-main">
+                    <div class="row no-gutters">
+                      <div class="col-lg-6">
+                        <div class="product-img-container">
+                          <div
+                            id="carouselProductMain"
+                            class="carousel slide product-carousel"
+                            data-bs-ride="carousel"
+                            data-bs-interval="false"
+                          >
+                            <div class="carousel-inner pr-image-gallery">
+                              <div
+                                class="carousel-item active"
+                                data-thumb="/images/prb1.jpg"
+                                data-src="/images/prb1.jpg"
+                                data-srcset="/images/prb1.jpg 1000w,/images/prb1.jpg 300w,/images/prb1.jpg 160w"
+                                data-sizes="100vw"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /images/prb1.webp 1000w,
+                                      /images/prb1.webp  300w,
+                                      /images/prb1.webp  160w
+                                    "
+                                    type="image/webp"
+                                  />
+                                  <source
+                                    srcset="
+                                      /images/prb1.jpg 1000w,
+                                      /images/prb1.jpg  300w,
+                                      /images/prb1.jpg  160w
+                                    "
+                                    type="image/jpeg"
+                                  />
+                                  <img
+                                    class="img-fluid"
+                                    src="/images/prb1.jpg"
+                                    alt="Classic Tall II Полусапоги - image 1 of 6"
+                                    itemprop="image"
+                                  />
+                                </picture>
+                              </div>
+                              <div
+                                class="carousel-item"
+                                data-thumb="/images/prb2.jpg"
+                                data-src="/images/prb2.jpg"
+                                data-srcset="/images/prb2.jpg 1000w,/images/prb2.jpg 300w,/images/prb2.jpg 160w"
+                                data-sizes="100vw"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /images/prb2.webp 1000w,
+                                      /images/prb2.webp  300w,
+                                      /images/prb2.webp  160w
+                                    "
+                                    type="image/webp"
+                                  />
+                                  <source
+                                    srcset="
+                                      /images/prb2.jpg 1000w,
+                                      /images/prb2.jpg  300w,
+                                      /images/prb2.jpg  160w
+                                    "
+                                    type="image/jpeg"
+                                  />
+                                  <img
+                                    class="img-fluid"
+                                    src="/images/prb2.jpg"
+                                    alt="Classic Tall II Полусапоги - image 1 of 6"
+                                  />
+                                </picture>
+                              </div>
+                              <div
+                                class="carousel-item"
+                                data-thumb="/images/prb3.jpg"
+                                data-src="/images/prb3.jpg"
+                                data-srcset="/images/prb3.jpg 1000w,/images/prb3.jpg 300w,/images/prb3.jpg 160w"
+                                data-sizes="100vw"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /images/prb3.webp 1000w,
+                                      /images/prb3.webp  300w,
+                                      /images/prb3.webp  160w
+                                    "
+                                    type="image/webp"
+                                  />
+                                  <source
+                                    srcset="
+                                      /images/prb3.jpg 1000w,
+                                      /images/prb3.jpg  300w,
+                                      /images/prb3.jpg  160w
+                                    "
+                                    type="image/jpeg"
+                                  />
+                                  <img
+                                    class="img-fluid"
+                                    src="/images/prb3.jpg"
+                                    alt="Classic Tall II Полусапоги - image 1 of 6"
+                                  />
+                                </picture>
+                              </div>
+                              <div
+                                class="carousel-item"
+                                data-thumb="/images/prb4.jpg"
+                                data-src="/images/prb4.jpg"
+                                data-srcset="/images/prb4.jpg 1000w,/images/prb4.jpg 300w,/images/prb4.jpg 160w"
+                                data-sizes="100vw"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="
+                                      /images/prb4.webp 1000w,
+                                      /images/prb4.webp  300w,
+                                      /images/prb4.webp  160w
+                                    "
+                                    type="image/webp"
+                                  />
+                                  <source
+                                    srcset="
+                                      /images/prb4.jpg 1000w,
+                                      /images/prb4.jpg  300w,
+                                      /images/prb4.jpg  160w
+                                    "
+                                    type="image/jpeg"
+                                  />
+                                  <img
+                                    class="img-fluid"
+                                    src="/images/prb4.jpg"
+                                    alt="Classic Tall II Полусапоги - image 1 of 6"
+                                  />
+                                </picture>
+                              </div>
+                            </div>
+                            <button
+                              class="carousel-control-prev"
+                              data-bs-target="#carouselProductMain"
+                              data-bs-slide="prev"
+                            >
+                              <span
+                                class="carousel-control-prev-icon"
+                                aria-hidden="true"
+                              ></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                              class="carousel-control-next"
+                              data-bs-target="#carouselProductMain"
+                              data-bs-slide="next"
+                            >
+                              <span
+                                class="carousel-control-next-icon"
+                                aria-hidden="true"
+                              ></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                            <div class="carousel-indicators">
+                              <div
+                                data-bs-target="#carouselProductMain"
+                                data-bs-slide-to="0"
+                                class="active"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="/images/prtmb1.webp"
+                                    type="image/webp"
+                                  />
+                                  <source
+                                    srcset="/images/prtmb1.jpg"
+                                    type="image/jpeg"
+                                  />
+                                  <img
+                                    class="img-thumbnail"
+                                    src="/images/prtmb1.jpg"
+                                    alt="Classic Tall II Полусапоги thumbnail - 1"
+                                  />
+                                </picture>
+                              </div>
+                              <div
+                                data-bs-target="#carouselProductMain"
+                                data-bs-slide-to="1"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="/images/prtmb2.webp"
+                                    type="image/webp"
+                                  />
+                                  <source
+                                    srcset="/images/prtmb2.jpg"
+                                    type="image/jpeg"
+                                  />
+                                  <img
+                                    class="img-thumbnail"
+                                    src="/images/prtmb2.jpg"
+                                    alt="Classic Tall II Полусапоги thumbnail - 2"
+                                  />
+                                </picture>
+                              </div>
+                              <div
+                                data-bs-target="#carouselProductMain"
+                                data-bs-slide-to="2"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="/images/prtmb3.webp"
+                                    type="image/webp"
+                                  />
+                                  <source
+                                    srcset="/images/prtmb3.jpg"
+                                    type="image/jpeg"
+                                  />
+                                  <img
+                                    class="img-thumbnail"
+                                    src="/images/prtmb3.jpg"
+                                    alt="Classic Tall II Полусапоги thumbnail - 3"
+                                  />
+                                </picture>
+                              </div>
+                              <div
+                                data-bs-target="#carouselProductMain"
+                                data-bs-slide-to="3"
+                              >
+                                <picture>
+                                  <source
+                                    srcset="/images/prtmb4.webp"
+                                    type="image/webp"
+                                  />
+                                  <source
+                                    srcset="/images/prtmb4.jpg"
+                                    type="image/jpeg"
+                                  />
+                                  <img
+                                    class="img-thumbnail"
+                                    src="/images/prtmb4.jpg"
+                                    alt="Classic Tall II Полусапоги thumbnail - 4"
+                                  />
+                                </picture>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- product-img-container -->
+                      </div>
+                      <!-- product-img-container -->
+                      <div class="col-lg-6">
+                        <div class="product-detail-container js-pr-cont card">
+                          <div class="card-body">
+                            <h1
+                              class="title-main-pr card-title"
+                              itemprop="name"
+                            >
+                              Женские Classic Tall II Полусапоги
+                            </h1>
+                            <meta itemprop="url" content="#" />
+                            <meta itemprop="brand" content="UGG" />
+                            <div
+                              class="price-product"
+                              itemprop="offers"
+                              itemscope
+                              itemtype="http://schema.org/Offer"
+                            >
+                              <meta itemprop="priceCurrency" content="RUB" />
+                              <link
+                                itemprop="availability"
+                                href="http://schema.org/InStock"
+                              />
+                              <link
+                                itemprop="itemCondition"
+                                href="http://schema.org/NewCondition"
+                              />
+                              <div class="old-price">
+                                <span class="js-value">24990</span> р.
+                              </div>
+                              <div class="price">
+                                <span class="js-value" itemprop="price"
+                                  >14990</span
+                                >
+                                р.
+                              </div>
+                            </div>
+                            <div class="sec-logo sec-pr">
+                              <div class="product-logo">
+                                <img alt="UGG" src="/images/logougg.svg" />
+                              </div>
+                              <div class="share-button">
+                                <div class="btn-group">
+                                  <button
+                                    class="btn bmd-btn-icon dropdown-toggle"
+                                    type="button"
+                                    id="share-btn"
+                                    data-bs-toggle="dropdown"
+                                    title="Поделиться этим продуктом"
+                                  >
+                                    <i class="material-icons">share</i>
+                                  </button>
+                                  <div class="dropdown-menu dropdown-menu-left">
+                                    <button
+                                      class="dropdown-item js-l-open"
+                                      type="button"
+                                      title="Поделиться в Vkontakte"
+                                      data-href="https://vkontakte.ru/share.php?url=http://newsaid-uggs.loc/women/mokasiny/ansley-mokasiny"
+                                      data-blank="true"
+                                    >
+                                      <span class="vk_logo"></span>
+                                    </button>
+                                    <button
+                                      class="dropdown-item js-l-open"
+                                      type="button"
+                                      title="Поделиться в Odnoklassniki"
+                                      data-href="https://connect.ok.ru/offer?url=http://newsaid-uggs.loc/women/mokasiny/ansley-mokasiny"
+                                      data-blank="true"
+                                    >
+                                      <span class="ok_logo"></span>
+                                    </button>
+                                    <button
+                                      class="dropdown-item js-l-open"
+                                      type="button"
+                                      title="Поделиться в Facebook"
+                                      data-href="https://www.facebook.com/sharer.php?u=http://newsaid-uggs.loc/women/mokasiny/ansley-mokasiny"
+                                      data-blank="true"
+                                    >
+                                      <span class="fb_logo"></span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="sec-pr">
+                              <span class="label">Model:</span>
+                              <span class="value" itemprop="sku">1016224</span>
+                            </div>
+                            <div class="sec-pr">
+                              <div class="sec-pr-title">Выберите цвет:</div>
+                              <div class="colors-pr">
+                                <a
+                                  class="js-sw-clr-pr active itemclr btn bmd-btn-fab"
+                                  href="/women/classic/classic-tall-ii-polusapogi?color=grey"
+                                  style="background-color: #9e9e9e"
+                                  data-title="GREY"
+                                  data-toggleuser="tooltip"
+                                  data-placement="top"
+                                  data-productcard="mainproduct"
+                                ></a>
+                                <div
+                                  data-title="BLACK тестовый большой блок"
+                                  data-toggleuser="tooltip"
+                                  data-placement="top"
+                                >
+                                  <a
+                                    class="js-sw-clr-pr itemclr btn bmd-btn-fab"
+                                    href="/women/classic/classic-tall-ii-polusapogi?color=blk"
+                                    style="background-color: #111"
+                                    data-productcard="mainproduct"
+                                  ></a>
+                                </div>
+                                <a
+                                  class="js-sw-clr-pr itemclr btn bmd-btn-fab"
+                                  href="#"
+                                  style="background-color: #1c4e88"
+                                  data-title="Navy"
+                                  data-toggleuser="tooltip"
+                                  data-placement="top"
+                                  data-productcard="mainproduct"
+                                ></a>
+                              </div>
+                            </div>
+                            <form
+                              action="/cart/add"
+                              method="post"
+                              class="js-add-card-form"
+                              novalidate="novalidate"
+                              onsubmit="return false"
+                            >
+                              <input
+                                name="cardData[product_model]"
+                                value="1"
+                                type="hidden"
+                              />
+                              <input
+                                name="cardData[pid]"
+                                value="861"
+                                type="hidden"
+                              />
+                              <input
+                                name="cardData[nosizeselect]"
+                                value="1"
+                                type="hidden"
+                              />
+                              <div class="sec-pr">
+                                <div class="sec-pr-title">Выберите размер:</div>
+                                <div class="sizes-selector">
+                                  <button
+                                    type="button"
+                                    class="btn btn-raised"
+                                    data-selector="sizes-sel-btn"
+                                    data-pid="861"
+                                  >
+                                    36
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-raised"
+                                    data-selector="sizes-sel-btn"
+                                    data-pid="862"
+                                  >
+                                    37
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-raised"
+                                    data-selector="sizes-sel-btn"
+                                    data-pid="863"
+                                  >
+                                    38
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-raised"
+                                    data-selector="sizes-sel-btn"
+                                    data-pid="864"
+                                  >
+                                    39
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-raised"
+                                    data-selector="sizes-sel-btn"
+                                    data-pid="865"
+                                  >
+                                    40
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-raised"
+                                    data-selector="sizes-sel-btn"
+                                    data-pid="866"
+                                  >
+                                    41
+                                  </button>
+                                </div>
+                              </div>
+                              <div class="pr-add-to-cart-sec">
+                                <button
+                                  type="submit"
+                                  class="btn btn-primary btn-raised btn-add-card"
+                                >
+                                  <span class="material-icons mr-1"
+                                    >add_shopping_cart</span
+                                  >
+                                  <span>В корзину</span>
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary btn-raised btn-add-card js-q-order"
+                                >
+                                  Быстрый заказ
+                                </button>
+                              </div>
+                            </form>
+                            <div class="sec-pr btn-inf-gr">
+                              <button
+                                type="button"
+                                class="btn btn-raised btn-info"
+                              >
+                                Подобрать размер
+                              </button>
+                              <button
+                                type="button"
+                                class="btn btn-raised btn-info"
+                              >
+                                Доставка и оплата
+                              </button>
+                            </div>
+                            <div class="pr-tr">
+                              <div class="row no-gutters">
+                                <div class="col-3 text-center p-1">
+                                  <img
+                                    class="img-fluid"
+                                    src="/images/b_div.png"
+                                    alt="Быстрая доставка"
+                                  />
+                                </div>
+                                <div class="col-3 text-center p-1">
+                                  <img
+                                    class="img-fluid"
+                                    src="/images/b_pr.png"
+                                    alt="Примерка перед покупкой"
+                                  />
+                                </div>
+                                <div class="col-3 text-center p-1">
+                                  <img
+                                    class="img-fluid"
+                                    src="/images/b_ret.png"
+                                    alt="Гарантия, обмен/возврат"
+                                  />
+                                </div>
+                                <div class="col-3 text-center p-1">
+                                  <img
+                                    class="img-fluid"
+                                    src="/images/b_off.png"
+                                    alt="Натуральная овчина"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- product-detail-container -->
+                      </div>
+                      <!-- col-lg-6-->
+                    </div>
+                    <!-- row-->
+                  </div>
+                  <!-- product-main-->
+                </div>
+                <!-- sec-product sec-->
+
+                <div class="sec-content sec">
+                  <div class="row">
+                    <div class="col-lg-9">
+                      <div class="card descr-main-pr">
+                        <div class="card-body">
+                          <h2 class="card-title font-weight-bold">Детали</h2>
+                          <div itemprop="description">
+                            <p>
+                              Классические сапожки изначально носили серферы,
+                              чтобы согреться после утренних сеансов, и с тех
+                              пор стали знаковыми из-за своей мягкой овчины и
+                              прочного дизайна. В женских Classic Tall II есть
+                              два новых обновления: стойкость к пятнам и воде,
+                              легкая подошва увеличенной прочности,
+                              износостойкости и пластичности. Эти универсальные
+                              сапоги хорошо сочетаются с практически любыми
+                              фасонами одежды, очень хорошо подходят к джинсам.
+                              Цена с учетом скидки 60% - 7800руб.. Ваша экономия
+                              составит 11900руб. Доступные варианты цветов:
+                              black, chocolate, grey, navy.
+                            </p>
+                            <p>
+                              <span class="title-parrams-product"
+                                >Характеристики продукта: </span
+                              >высота: высокие; пол: женские; фасон:
+                              классические; материал: замшевые.
+                            </p>
+                          </div>
+                          <div>
+                            <ul>
+                              <li>Двустворчатая овчина и замша</li>
+                              <li>Подготовлено для отражения влаги и пятен</li>
+                              <li>Стельки из овчины</li>
+                              <li>Высота платформы - низкая, ~2см</li>
+                              <li>Высота - ~28 см</li>
+                              <li>Подошва - Treadlite by UGG ™</li>
+                              <li>
+                                Этот продукт содержит натуральный мех от овец
+                                или ягненка. Мех может быть получен из
+                                Австралии, Ирландии, Соединенного Королевства
+                                или Соединенных Штатов. Он был искусственно
+                                окрашен и обработан.
+                              </li>
+                            </ul>
+                            <div class="description_country">
+                              <p>Этот продукт сделан в Китае.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <h2 class="h5 font-weight-bold mt-2 mb-2 text-center">
+                        Вам так же может понравиться
+                      </h2>
+                      <div class="card product">
+                        <a class="js-link-true2 pr-l-link js-l-edit" href="#">
+                          <div class="pr-bage"></div>
+                          <div class="pr-media">
+                            <div>
+                              <picture>
+                                <source
+                                  srcset="/images/pr1.webp"
+                                  type="image/webp"
+                                />
+                                <source
+                                  srcset="/images/pr1.jpg"
+                                  type="image/jpeg"
+                                />
+                                <img
+                                  class="card-img-top"
+                                  src="/images/pr1.jpg"
+                                  alt="Classic Tall II Полусапоги | Женские"
+                                />
+                              </picture>
+                            </div>
+                          </div>
+                          <div class="pr-meta card-body">
+                            <div class="pr-gender">Женские</div>
+                            <div class="pr-title">
+                              Classic Tall II Полусапоги
+                            </div>
+                          </div>
+                        </a>
+                        <div class="card-body">
+                          <div class="price-product">
+                            <div class="old-price">
+                              <span class="value">14990</span> руб.
+                            </div>
+                            <div class="price">
+                              <span class="value">6990</span> руб.
+                            </div>
+                          </div>
+                          <div class="colors-product">
+                            <div class="colors-title">Выберите цвет:</div>
+                            <div class="colors-body">
+                              <a
+                                class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #9e9e9e"
+                                href="#1"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="false"
+                                data-badge="false"
+                                data-badgesale="false"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #111"
+                                href="#2"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="true"
+                                data-badge="Акция"
+                                data-badgesale="true"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #1c4e88"
+                                href="#3"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="true"
+                                data-badge="Новый цвет"
+                                data-badgesale="false"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #9e9e9e"
+                                href="#1"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="false"
+                                data-badge="false"
+                                data-badgesale="false"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #111"
+                                href="#2"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="true"
+                                data-badge="Акция"
+                                data-badgesale="true"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #1c4e88"
+                                href="#3"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="true"
+                                data-badge="Новый цвет"
+                                data-badgesale="false"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #9e9e9e"
+                                href="#1"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="false"
+                                data-badge="false"
+                                data-badgesale="false"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #111"
+                                href="#2"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="true"
+                                data-badge="Акция"
+                                data-badgesale="true"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #1c4e88"
+                                href="#3"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="true"
+                                data-badge="Новый цвет"
+                                data-badgesale="false"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #9e9e9e"
+                                href="#1"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="false"
+                                data-badge="false"
+                                data-badgesale="false"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #111"
+                                href="#2"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="true"
+                                data-badge="Акция"
+                                data-badgesale="true"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                              <a
+                                class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                                style="background-color: #1c4e88"
+                                href="#3"
+                                data-price="7800"
+                                data-oldprice="19700"
+                                data-hover="false"
+                                data-badgeon="true"
+                                data-badge="Новый цвет"
+                                data-badgesale="false"
+                                data-masterbadge=""
+                                data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                              >
+                              </a>
+                            </div>
+                          </div>
+                          <div class="btn-wr">
+                            <button
+                              type="button"
+                              data-href="#"
+                              class="btn btn-primary btn-raised btn-add-card js-quickview js-b-edit"
+                              data-toggle="modal"
+                              data-bs-target="#myModalquickviewProduct"
+                            >
+                              Подробнее
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- product -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- itemtype Product -->
+
+              <div class="sec-products sec">
+                <h2 class="sec-title">Недавно просмотренные</h2>
+                <div class="row pr-row">
+                  <div class="col-sm-6 col-lg-3 mt-1 mb-1">
+                    <div class="card product">
+                      <a class="js-link-true2 pr-l-link js-l-edit" href="#">
+                        <div class="pr-bage">
+                          <div class="bage primary">Новый цвет</div>
+                        </div>
+                        <div class="pr-media">
+                          <div>
+                            <picture>
+                              <source
+                                srcset="/images/pr1.webp"
+                                type="image/webp"
+                              />
+                              <source
+                                srcset="/images/pr1.jpg"
+                                type="image/jpeg"
+                              />
+                              <img
+                                class="card-img-top"
+                                src="/images/pr1.jpg"
+                                alt="Classic Tall II Полусапоги | Женские"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="pr-meta card-body">
+                          <div class="pr-gender">Женские</div>
+                          <div class="pr-title">Classic Tall II Полусапоги</div>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <div class="price-product">
+                          <div class="old-price">
+                            <span class="value">14990</span> руб.
+                          </div>
+                          <div class="price">
+                            <span class="value">6990</span> руб.
+                          </div>
+                        </div>
+                        <div class="colors-product">
+                          <div class="colors-title">Выберите цвет:</div>
+                          <div class="colors-body">
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="/women/classic/classic-mini-ii-polusapogi?color=cho"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="/women/classic/classic-mini-ii-polusapogi?color=che"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="/women/classic/classic-mini-ii-polusapogi?color=grey"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                          </div>
+                        </div>
+                        <div class="btn-wr">
+                          <button
+                            type="button"
+                            data-href="/women/classic/classic-mini-ii-polusapogi?color=cho"
+                            class="btn btn-primary btn-raised btn-add-card js-quickview js-b-edit"
+                            data-toggle="modal"
+                            data-bs-target="#myModalquickviewProduct"
+                          >
+                            Подробнее
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- product -->
+                  </div>
+                  <!-- col-sm-6 col-lg-3 -->
+                  <div class="col-sm-6 col-lg-3 mt-1 mb-1">
+                    <div class="card product">
+                      <a class="js-link-true2 pr-l-link js-l-edit" href="#">
+                        <div class="pr-bage"></div>
+                        <div class="pr-media">
+                          <div>
+                            <picture>
+                              <source
+                                srcset="/images/pr1.webp"
+                                type="image/webp"
+                              />
+                              <source
+                                srcset="/images/pr1.jpg"
+                                type="image/jpeg"
+                              />
+                              <img
+                                class="card-img-top"
+                                src="/images/pr1.jpg"
+                                alt="Classic Tall II Полусапоги | Женские"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="pr-meta card-body">
+                          <div class="pr-gender">Женские</div>
+                          <div class="pr-title">Classic Tall II Полусапоги</div>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <div class="price-product">
+                          <div class="old-price">
+                            <span class="value">14990</span> руб.
+                          </div>
+                          <div class="price">
+                            <span class="value">6990</span> руб.
+                          </div>
+                        </div>
+                        <div class="colors-product">
+                          <div class="colors-title">Выберите цвет:</div>
+                          <div class="colors-body">
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="#1"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="#2"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="#3"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="#1"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="#2"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="#3"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="#1"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="#2"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="#3"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="#1"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="#2"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="#3"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                          </div>
+                        </div>
+                        <div class="btn-wr">
+                          <button
+                            type="button"
+                            data-href="#"
+                            class="btn btn-primary btn-raised btn-add-card js-quickview js-b-edit"
+                            data-toggle="modal"
+                            data-bs-target="#myModalquickviewProduct"
+                          >
+                            Подробнее
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- product -->
+                  </div>
+                  <!-- col-sm-6 col-lg-3 -->
+                  <div class="col-sm-6 col-lg-3 mt-1 mb-1">
+                    <div class="card product">
+                      <a class="js-link-true2 pr-l-link js-l-edit" href="#">
+                        <div class="pr-bage">
+                          <div class="bage primary">Новый цвет</div>
+                        </div>
+                        <div class="pr-media">
+                          <div>
+                            <picture>
+                              <source
+                                srcset="/images/pr1.webp"
+                                type="image/webp"
+                              />
+                              <source
+                                srcset="/images/pr1.jpg"
+                                type="image/jpeg"
+                              />
+                              <img
+                                class="card-img-top"
+                                src="/images/pr1.jpg"
+                                alt="Classic Tall II Полусапоги | Женские"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="pr-meta card-body">
+                          <div class="pr-gender">Женские</div>
+                          <div class="pr-title">Classic Tall II Полусапоги</div>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <div class="price-product">
+                          <div class="old-price">
+                            <span class="value">14990</span> руб.
+                          </div>
+                          <div class="price">
+                            <span class="value">6990</span> руб.
+                          </div>
+                        </div>
+                        <div class="colors-product">
+                          <div class="colors-title">Выберите цвет:</div>
+                          <div class="colors-body">
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="#1"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="#2"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="#3"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                          </div>
+                        </div>
+                        <div class="btn-wr">
+                          <button
+                            type="button"
+                            data-href="#"
+                            class="btn btn-primary btn-raised btn-add-card js-quickview js-b-edit"
+                            data-toggle="modal"
+                            data-bs-target="#myModalquickviewProduct"
+                          >
+                            Подробнее
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- product -->
+                  </div>
+                  <!-- col-sm-6 col-lg-3 -->
+                  <div class="col-sm-6 col-lg-3 mt-1 mb-1">
+                    <div class="card product">
+                      <a class="js-link-true2 pr-l-link js-l-edit" href="#">
+                        <div class="pr-bage"></div>
+                        <div class="pr-media">
+                          <div>
+                            <picture>
+                              <source
+                                srcset="/images/pr1.webp"
+                                type="image/webp"
+                              />
+                              <source
+                                srcset="/images/pr1.jpg"
+                                type="image/jpeg"
+                              />
+                              <img
+                                class="card-img-top"
+                                src="/images/pr1.jpg"
+                                alt="Classic Tall II Полусапоги | Женские"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                        <div class="pr-meta card-body">
+                          <div class="pr-gender">Женские</div>
+                          <div class="pr-title">Classic Tall II Полусапоги</div>
+                        </div>
+                      </a>
+                      <div class="card-body">
+                        <div class="price-product">
+                          <div class="old-price">
+                            <span class="value">14990</span> руб.
+                          </div>
+                          <div class="price">
+                            <span class="value">6990</span> руб.
+                          </div>
+                        </div>
+                        <div class="colors-product">
+                          <div class="colors-title">Выберите цвет:</div>
+                          <div class="colors-body">
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="#1"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="#2"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="#3"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="#1"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="#2"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="#3"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="#1"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="#2"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="#3"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn selected js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #9e9e9e"
+                              href="#1"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="false"
+                              data-badge="false"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr1.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 GREY","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr1.jpg 1000w,\/images\/pr1.jpg 300w,\/images\/pr1.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #111"
+                              href="#2"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Акция"
+                              data-badgesale="true"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr2.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr2.jpg 1000w,\/images\/pr2.jpg 300w,\/images\/pr2.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                            <a
+                              class="btn colors-btn js-colors-btn bmd-btn-icon bmd-btn-icon-sm"
+                              style="background-color: #1c4e88"
+                              href="#3"
+                              data-price="7800"
+                              data-oldprice="19700"
+                              data-hover="false"
+                              data-badgeon="true"
+                              data-badge="Новый цвет"
+                              data-badgesale="false"
+                              data-masterbadge=""
+                              data-thumb='{"src":"\/images\/pr3.jpg","alt":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","title":"Classic Tall II \u041f\u043e\u043b\u0443\u0441\u0430\u043f\u043e\u0433\u0438 BLK","srcset":"\/images\/pr3.jpg 1000w,\/images\/pr3.jpg 300w,\/images\/pr3.jpg 160w","alt_hoverimage":""}'
+                            >
+                            </a>
+                          </div>
+                        </div>
+                        <div class="btn-wr">
+                          <button
+                            type="button"
+                            data-href="#"
+                            class="btn btn-primary btn-raised btn-add-card js-quickview js-b-edit"
+                            data-toggle="modal"
+                            data-bs-target="#myModalquickviewProduct"
+                          >
+                            Подробнее
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- product -->
+                  </div>
+                  <!-- col-sm-6 col-lg-3 -->
+                </div>
+              </div>
+              <!-- sec-products sec -->
+            </div>
+            <!--  container-->
+          </div>
+          <!--  content-wr-->
+        </div>
+        <!--  page-content-->
+
+        <div class="preloader">
+          <div>
+            <div class="d-flex align-items-center">
+              <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-scr-btn">
+          <button
+            type="button"
+            class="btn btn-primary bmd-btn-fab"            
+          >
+            <i class="material-icons">arrow_upward</i>
+          </button>
+        </div>
+        <div class="bottom-alerts">
+          <!-- show -->
+          <div
+            class="alert alert-danger alert-dismissible fade"
+            id="js-alert-danger"
+          >
+            <div class="js-allert-message"></div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+          </div>
+          <div
+            class="alert alert-success alert-dismissible fade"
+            id="js-alert-success"
+          >
+            <div class="js-allert-message"></div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+            ></button>
+          </div>
+        </div>
+
+        <footer>
+          <div class="container">
+            <nav class="footer-menu">
+              <div class="row">
+                <div class="footer-menu-section col-lg-3">
+                  <h5 class="panel-title">
+                    <a
+                      class="collapsed dropdown-toggle"
+                      data-toggle="collapse"
+                      href="#collapseFootContact"
+                      aria-controls="collapseFootContact"
+                      >Контакты</a
+                    >
+                  </h5>
+                  <div id="collapseFootContact" class="panel-collapse collapse">
+                    <ul
+                      class="nav-pills"
+                      itemscope=""
+                      itemtype="http://schema.org/Organization"
+                    >
+                      <li>
+                        <span itemprop="name">Демо-магазин</span>
+                      </li>
+                      <li>
+                        <a
+                          class="footer-menu-nav-link"
+                          href="tel:+79990000000"
+                          title="Телефон"
+                          itemprop="telephone"
+                        >
+                          <i class="material-icons">phone</i>
+                          8 (800) 000-00-00</a
+                        >
+                      </li>
+
+                      <li>
+                        <a
+                          class="footer-menu-nav-link"
+                          href="mailto:sales@example.com"
+                          title="E-MAIL"
+                          itemprop="email"
+                        >
+                          <i class="material-icons">email</i>
+                          sales@example.com</a
+                        >
+                      </li>
+                      <li>
+                        <i class="material-icons">map</i>
+                        <span
+                          itemprop="address"
+                          itemscope=""
+                          itemtype="http://schema.org/PostalAddress"
+                        >
+                          <span itemprop="streetAddress"
+                            >101000, г. Москва, ул. Демонстрационная, д. 1</span
+                          >
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- footer-menu-section col-md-3 -->
+                <div class="footer-menu-section col-lg-3">
+                  <h5 class="panel-title">
+                    <a
+                      class="collapsed dropdown-toggle"
+                      data-toggle="collapse"
+                      href="#collapseFootCatalog"
+                      aria-controls="collapseFootCatalog"
+                      >Каталог</a
+                    >
+                  </h5>
+                  <div id="collapseFootCatalog" class="panel-collapse collapse">
+                    <ul class="nav-pills">
+                      <li>
+                        <a href="#" title="Угги женские" class="js-link-true2"
+                          >Угги женские</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" title="Угги мужские" class="js-link-true2"
+                          >Угги мужские</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" title="Угги детские" class="js-link-true2"
+                          >Угги детские</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          title="Новые коллекции угги"
+                          class="js-link-true2"
+                          >Новинки угги</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-menu-section col-lg-3">
+                  <h5 class="panel-title">
+                    <a
+                      class="collapsed dropdown-toggle"
+                      data-toggle="collapse"
+                      href="#collapseFootNavigat"
+                      aria-controls="collapseFootNavigat"
+                      >Навигация</a
+                    >
+                  </h5>
+                  <div id="collapseFootNavigat" class="panel-collapse collapse">
+                    <ul class="nav-pills">
+                      <li>
+                        <a href="#" class="js-link-true2" title="Новости, блог"
+                          >Новости, блог</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="js-link-true2" title="Отзывы"
+                          >Отзывы</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                        href="#askquestion"
+                        data-toggle="askquestion"
+                        data-title="Заказать звонок"
+                        >Задать вопрос</a
+                      >
+                      </li>
+                      <li>
+                        <a href="#" title="Контакты">Заявка на возврат/обмен</a>
+                      </li>
+                      <li>
+                        <a href="#" class="js-link-true2" title="Контакты"
+                          >Контакты</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-menu-section col-lg-3">
+                  <h5 class="panel-title">
+                    <a
+                      class="collapsed dropdown-toggle"
+                      data-toggle="collapse"
+                      href="#collapseFootPolinf"
+                      aria-controls="collapseFootPolinf"
+                      >Полезная информация</a
+                    >
+                  </h5>
+                  <div id="collapseFootPolinf" class="panel-collapse collapse">
+                    <ul class="nav-pills">
+                      <li>
+                        <a href="#" class="js-link-true2" title="Вопросы ответы"
+                          >Вопросы ответы</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="js-link-true2" title="Гарантия"
+                          >Гарантия</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="js-link-true2"
+                          title="Как выбрать размер"
+                          >Размерная сетка</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="js-link-true2" title="Оферта"
+                          >Оферта</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- row -->
+            </nav>
+            <!-- /.footer-menu -->
+            <p class="footer-copyright">
+              &copy; 2020 demo-shop.example. Все права защищены.
+            </p>
+          </div>
+          <!-- container -->
+        </footer>
+      </main>
+    </div>
+    <!-- bmd-layout-container -->
+
+    <button
+      type="button"
+      class="btn btn-top-cart"      
+      data-qty="1"
+      data-selector="btn-top-cart"     
+    >
+      <span class="material-icons">shopping_cart</span>      
+    </button>
+
+    <!-- <div class="js-small-card-wrap" data-qty="0">
+      <div class="cart-btn">
+        <button
+          type="button"
+          class="btn btn-top-cart"
+          id="cartBtn"
+          data-bs-toggle="modal"
+          data-bs-target="#modalcart"
+        >
+          <span class="material-icons">shopping_cart</span>
+          <span class="badge badge-primary js-bage-cart-qty">0</span>
+        </button>
+      </div>
+    </div> -->
+  </body>
+</html>
