@@ -48,7 +48,7 @@ class Modification extends AppModel {
                 \R::store($gallery);
                 \R::store($modif);
                 \R::commit();
-            } catch (Exception $e) {
+            } catch (\Throwable $e) {
                 \R::rollback();
                 $res = ['succes' => false, 'name' => $name, 'error' => $e];
                 return $res;
@@ -110,7 +110,7 @@ class Modification extends AppModel {
                     $this->saveData('registr', $registr_data);
                 }
                 \R::commit();
-            } catch (Exception $e) {
+            } catch (\Throwable $e) {
                 \R::rollback();
                 $res = ['succes' => false, 'title' => 'Ошибка', 'message' => $e];
                 return $res;

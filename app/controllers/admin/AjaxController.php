@@ -65,7 +65,7 @@ class AjaxController extends AppController {
                                 \R::store($sefbean);
                                 \R::store($table);
                                 \R::commit();
-                            } catch (Exception $e) {
+                            } catch (\Throwable $e) {
                                 \R::rollback();
                             }
 
