@@ -143,7 +143,7 @@ class Orders extends AppModel {
             }
 
             \R::commit();
-        } catch (Exception $e) {
+        } catch (\Throwable $e) {
             \R::rollback();
             $res = ['succes' => false, 'title' => 'Ошибка', 'message' => $e];
             return $res;
