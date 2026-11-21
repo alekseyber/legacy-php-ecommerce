@@ -11,6 +11,10 @@ class AppModel extends Model {
     public static function createAlias($table, $field, $str, $id) {
         $str = self::str2url($str);
         $res = \R::findOne($table, "$field = ?", [$str]);
+        // занятость алиаса в sef: остатки от удалённых и недосозданных товаров
+        if (!$res && $table === 'product') {
+            $res = \R::getCell('SELECT id FROM sef WHERE alias = ? LIMIT 1', ['product/' . $str]);
+        }
         if ($res) {
             $str = "{$str}-{$id}";
             $res = \R::count($table, "$field = ?", [$str]);
