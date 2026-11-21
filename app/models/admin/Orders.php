@@ -144,8 +144,10 @@ class Orders extends AppModel {
 
             \R::commit();
         } catch (\Throwable $e) {
+            error_log('[' . date('Y-m-d H:i:s') . '] ' . get_class($e) . ': ' . $e->getMessage()
+            . ' | ' . $e->getFile() . ':' . $e->getLine() . "\n", 3, ROOT . '/tmp/errors.log');
             \R::rollback();
-            $res = ['succes' => false, 'title' => 'Ошибка', 'message' => $e];
+            $res = ['succes' => false, 'title' => 'Ошибка', 'message' => 'Внутренняя ошибка'];
             return $res;
         }
         foreach ($data_no as $reg) {

@@ -49,8 +49,10 @@ class Modification extends AppModel {
                 \R::store($modif);
                 \R::commit();
             } catch (\Throwable $e) {
+                error_log('[' . date('Y-m-d H:i:s') . '] ' . get_class($e) . ': ' . $e->getMessage()
+                    . ' | ' . $e->getFile() . ':' . $e->getLine() . "\n", 3, ROOT . '/tmp/errors.log');
                 \R::rollback();
-                $res = ['succes' => false, 'name' => $name, 'error' => $e];
+                $res = ['succes' => false, 'name' => $name, 'error' => 'Внутренняя ошибка'];
                 return $res;
             }
             $res = ['succes' => true, 'name' => $name];
@@ -111,8 +113,10 @@ class Modification extends AppModel {
                 }
                 \R::commit();
             } catch (\Throwable $e) {
+                error_log('[' . date('Y-m-d H:i:s') . '] ' . get_class($e) . ': ' . $e->getMessage()
+                    . ' | ' . $e->getFile() . ':' . $e->getLine() . "\n", 3, ROOT . '/tmp/errors.log');
                 \R::rollback();
-                $res = ['succes' => false, 'title' => 'Ошибка', 'message' => $e];
+                $res = ['succes' => false, 'title' => 'Ошибка', 'message' => 'Внутренняя ошибка'];
                 return $res;
             }
             $res = ['succes' => true, 'title' => 'Изменения сохранены', 'message' => 'Модификация сохранена успешно'];

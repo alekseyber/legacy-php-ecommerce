@@ -66,12 +66,19 @@ class AjaxController extends AppController {
                                 \R::store($table);
                                 \R::commit();
                             } catch (\Throwable $e) {
+                                error_log('[' . date('Y-m-d H:i:s') . '] ' . get_class($e) . ': ' . $e->getMessage()
+                                    . ' | ' . $e->getFile() . ':' . $e->getLine() . "\n", 3, ROOT . '/tmp/errors.log');
                                 \R::rollback();
+                                $succes = false;
+                                $title = 'Ошибка';
+                                $message = 'Изменения не сохранены';
                             }
 
-                            $succes = true;
-                            $title = 'Успех';
-                            $message = 'Изменения охранены';
+                            if (!isset($succes)) {
+                                $succes = true;
+                                $title = 'Успех';
+                                $message = 'Изменения сохранены';
+                            }
                         } else {
                             $message = 'Старый адрес не найден';
                         }
